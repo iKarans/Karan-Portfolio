@@ -5,3 +5,11 @@
     grid-template-rows: auto auto 1fr;
     grid-gap: 10px;
 }
+
+.about {
+    height: 95vh;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-gap: 30px;
+}
