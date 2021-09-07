@@ -59,7 +59,7 @@ body {
   justify-self: center;
 }
 .about__stack {
-  border: 2px solid #AB20FD;
+  border: 5px solid #AB20FD;
   padding: 20px;
 }
 .about__stack__h3 {
@@ -73,7 +73,7 @@ body {
   justify-self: center;
 }
 .about__skills {
-  border: 2px solid #AB20FD;
+  border: 5px solid #AB20FD;
   padding: 20px;
 }
 .about__skills__h3 {
@@ -91,6 +91,27 @@ body {
   justify-self: center;
   font-size: 25px;
   color: #7D12FF;
+}
+
+.portfolio__h2 {
+  font-size: 27px;
+  align-self: center;
+  justify-self: center;
+}
+.portfolio__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.portfolio__ul__li1 {
+  background-color: #AB20FD;
+  padding: 5px;
+}
+.portfolio__gallery__img {
+  width: 80%;
+  align-self: center;
+  justify-self: center;
 }
 
 * {
@@ -142,4 +163,8 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr;
   grid-gap: 30px;
+}
+.portfolio__gallery {
+  display: grid;
+  grid-template-columns: 1fr;
 }

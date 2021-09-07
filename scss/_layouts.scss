@@ -43,4 +43,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
     grid-gap: 30px;
+    &__gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
