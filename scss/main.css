@@ -73,7 +73,7 @@ body {
   justify-self: center;
 }
 .about__skills {
-  border: 5px solid #AB20FD;
+  border: 5px solid #7D12FF;
   padding: 20px;
 }
 .about__skills__h3 {
@@ -90,7 +90,7 @@ body {
   align-self: center;
   justify-self: center;
   font-size: 25px;
-  color: #7D12FF;
+  color: #AB20FD;
 }
 
 .portfolio__h2 {
