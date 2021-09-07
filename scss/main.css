@@ -1,11 +1,15 @@
+body {
+  background-color: #141414;
+  color: #FBF8FD;
+}
+
 .header {
   height: 5vh;
-  background-color: #141414;
+  width: 90%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fbf8fd;
-  padding: 0 10px 0 10px;
 }
 .header__socials__i1 {
   margin-right: 20px;
@@ -14,9 +18,6 @@
   margin-right: 20px;
 }
 
-.lpage {
-  color: #FBF8FD;
-}
 .lpage__h1 {
   text-align: center;
   justify-self: center;
@@ -46,16 +47,91 @@
   align-self: center;
 }
 
-.lpage {
-  height: 95vh;
-  background-color: #141414;
-  display: grid;
-  grid-template-rows: auto auto 1fr;
-  grid-gap: 10px;
+.about__h2 {
+  font-size: 27px;
+  align-self: center;
+  justify-self: center;
+}
+.about__p {
+  font-size: 14px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+.about__stack {
+  border: 2px solid #AB20FD;
+  padding: 20px;
+}
+.about__stack__h3 {
+  font-size: 25px;
+  align-self: center;
+  justify-self: center;
+}
+.about__stack i {
+  font-size: 25px;
+  align-self: center;
+  justify-self: center;
+}
+.about__skills {
+  border: 2px solid #AB20FD;
+  padding: 20px;
+}
+.about__skills__h3 {
+  font-size: 25px;
+  align-self: center;
+  justify-self: center;
+}
+.about__skills i {
+  font-size: 25px;
+  align-self: center;
+  justify-self: center;
+}
+.about__arrows {
+  align-self: center;
+  justify-self: center;
+  font-size: 25px;
+  color: #7D12FF;
 }
 
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+.lpage {
+  height: 95vh;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-gap: 10px;
+}
+
+.about {
+  height: 95vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr 1fr auto;
+  grid-gap: 30px;
+}
+.about__stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.about__stack__h3 {
+  grid-column: 1/4;
+}
+.about__skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.about__skills__h3 {
+  grid-column: 1/4;
 }

@@ -1,7 +1,38 @@
 .lpage {
     height: 95vh;
-    background-color: #141414;
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-rows: auto auto 1fr;
     grid-gap: 10px;
 }
+
+.about {
+    height: 95vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-gap: 30px;
+    &__stack {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        &__h3 {
+            grid-column: 1 / 4;
+
+        }
+    }
+    &__skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        &__h3 {
+            grid-column: 1 / 4;
+        }
+    }
+}
+

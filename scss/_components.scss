@@ -1,11 +1,15 @@
+body {
+    background-color: #141414;
+    color: #FBF8FD;
+}
+
 .header {
     height: 5vh;
-    background-color: #141414;
+    width: 90%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fbf8fd;
-    padding: 0 10px 0 10px;
     &__socials {
         &__i1 {
             margin-right: 20px;
@@ -17,7 +21,6 @@
 }
 
 .lpage {
-    color: #FBF8FD;
     &__h1 {
         text-align: center;
         justify-self: center;
@@ -46,5 +49,55 @@
     &__img {
         justify-self: center;
         align-self: center;
+    }
+}
+
+.about {
+    &__h2 {
+        font-size: 27px;
+        align-self: center;
+        justify-self: center;
+    }
+    &__p {
+        font-size: 14px;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+
+    }
+    &__stack {
+        border: 2px solid #AB20FD;
+        padding: 20px;
+        &__h3 {
+            font-size: 25px;
+            align-self: center;
+            justify-self: center;
+        }
+        i {
+            font-size: 25px;
+            align-self: center;
+            justify-self: center;
+        }
+        
+    }
+    &__skills {
+        border: 2px solid #AB20FD;
+        padding: 20px;
+        &__h3 {
+            font-size: 25px;
+            align-self: center;
+            justify-self: center;
+        }
+        i {
+            font-size: 25px;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    &__arrows {
+        align-self: center;
+        justify-self: center;
+        font-size: 25px;
+        color: #7D12FF;
     }
 }
