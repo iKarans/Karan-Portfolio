@@ -1,6 +1,6 @@
 .header {
     height: 5vh;
-    background-color: #212121;
+    background-color: #141414;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,5 +13,38 @@
         &__i2 {
             margin-right: 20px;
         }
+    }
+}
+
+.lpage {
+    color: #FBF8FD;
+    &__h1 {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 30px;
+        margin-top: 30px;
+        &__span {
+            color: #AB20FD;
+        }
+        
+    }
+    &__btn {
+        justify-self: center;
+        align-self: center;
+        padding: 13px 60px;
+        background-color: #AB20FD;
+        border-radius: 25px;
+        border: 0px;
+        width: 225px;
+        font-family: "Roboto", sans-serif;
+        color: #FBF8FD;
+        font-size: 14px;
+    }
+    &__img {
+        justify-self: center;
+        align-self: center;
     }
 }
