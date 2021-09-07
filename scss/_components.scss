@@ -5,10 +5,11 @@ body {
 
 .header {
     height: 5vh;
+    width: 90%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px 0 10px;
     &__socials {
         &__i1 {
             margin-right: 20px;
@@ -48,5 +49,34 @@ body {
     &__img {
         justify-self: center;
         align-self: center;
+    }
+}
+
+.about {
+    &__h2 {
+        font-size: 27px;
+        align-self: center;
+        justify-self: center;
+    }
+    &__p {
+        font-size: 14px;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+
+    }
+    &__stack {
+        align-self: center;
+        justify-self: center;
+        &__h3 {
+            font-size: 25px;
+        }
+    }
+    &__skills {
+        align-self: center;
+        justify-self: center;
+        &__h3 {
+            font-size: 25px;
+        }
     }
 }

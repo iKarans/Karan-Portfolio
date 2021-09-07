@@ -1,5 +1,7 @@
 .lpage {
     height: 95vh;
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-rows: auto auto 1fr;
     grid-gap: 10px;
@@ -7,8 +9,18 @@
 
 .about {
     height: 95vh;
+    width: 90%;
+    margin: auto;
     margin-top: 5vh;
     display: grid;
     grid-template-rows: auto auto 1fr 1fr auto;
     grid-gap: 30px;
+    &__stack {
+        &__logos {
+            display: grid;
+            grid-auto-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 1fr 1fr 1fr;
+        }
+    }
 }
+
