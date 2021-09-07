@@ -66,17 +66,38 @@ body {
 
     }
     &__stack {
-        align-self: center;
-        justify-self: center;
+        border: 2px solid #AB20FD;
+        padding: 20px;
         &__h3 {
             font-size: 25px;
+            align-self: center;
+            justify-self: center;
         }
+        i {
+            font-size: 25px;
+            align-self: center;
+            justify-self: center;
+        }
+        
     }
     &__skills {
-        align-self: center;
-        justify-self: center;
+        border: 2px solid #AB20FD;
+        padding: 20px;
         &__h3 {
             font-size: 25px;
+            align-self: center;
+            justify-self: center;
         }
+        i {
+            font-size: 25px;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    &__arrows {
+        align-self: center;
+        justify-self: center;
+        font-size: 25px;
+        color: #7D12FF;
     }
 }
