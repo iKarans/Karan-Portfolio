@@ -41,7 +41,7 @@
     margin: 5vh auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto auto auto;
     grid-gap: 30px;
     &__gallery {
         display: grid;

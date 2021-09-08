@@ -59,5 +59,26 @@
             font-size: 32px;
         }
     }
-
+    .portfolio {
+        &__h2 {
+            font-size: 36px;
+        }
+        &__ul {
+            font-size: 19px;
+        }
+        &__gallery {
+            grid-template-columns: 1fr 1fr;
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+    .contact {
+        &__h2 {
+            font-size: 36px;
+        }
+        &__links {
+            font-size: 32px;
+        }
+    }
 }
