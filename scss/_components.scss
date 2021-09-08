@@ -1,6 +1,7 @@
 body {
     background-color: #141414;
     color: #FBF8FD;
+    font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -10,6 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Inter", sans-serif;
     &__socials {
         &__i1 {
             margin-right: 20px;
@@ -57,6 +59,7 @@ body {
         font-size: 27px;
         align-self: center;
         justify-self: center;
+        font-family: "Inter", sans-serif;
     }
     &__p {
         font-size: 14px;
@@ -107,6 +110,7 @@ body {
         font-size: 27px;
         align-self: center;
         justify-self: center;
+        font-family: "Inter", sans-serif;
     }
     &__ul {
         display: flex;
@@ -131,6 +135,7 @@ body {
     &__h2 {
         align-self: center;
         justify-self: center;
+        font-family: "Inter", sans-serif;
     }
     &__links {
         width: 70%;
