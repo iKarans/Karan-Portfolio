@@ -156,7 +156,6 @@ body {
 }
 
 .portfolio {
-  height: 95vh;
   width: 90%;
   margin: 5vh auto 0 auto;
   display: grid;
