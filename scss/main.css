@@ -248,4 +248,39 @@ body {
     grid-column: 2/3;
     grid-row: 1/3;
   }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+  }
+  .about__h2 {
+    grid-column: 1/3;
+    font-size: 36px;
+  }
+  .about__p {
+    grid-column: 1/3;
+    font-size: 19px;
+  }
+  .about__stack {
+    grid-column: 1/2;
+  }
+  .about__stack__h3 {
+    font-size: 32px;
+  }
+  .about__stack i {
+    font-size: 32px;
+  }
+  .about__skills {
+    grid-column: 2/3;
+  }
+  .about__skills__h3 {
+    font-size: 32px;
+  }
+  .about__skills i {
+    font-size: 32px;
+  }
+  .about__arrows {
+    grid-column: 1/3;
+    font-size: 32px;
+  }
 }
