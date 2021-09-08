@@ -66,7 +66,7 @@ body {
 
     }
     &__stack {
-        border: 2px solid #AB20FD;
+        border: 5px solid #AB20FD;
         padding: 20px;
         &__h3 {
             font-size: 25px;
@@ -81,7 +81,7 @@ body {
         
     }
     &__skills {
-        border: 2px solid #AB20FD;
+        border: 5px solid #7D12FF;
         padding: 20px;
         &__h3 {
             font-size: 25px;
@@ -98,6 +98,31 @@ body {
         align-self: center;
         justify-self: center;
         font-size: 25px;
-        color: #7D12FF;
+        color: #AB20FD;
+    }
+}
+
+.portfolio {
+    &__h2{
+        font-size: 27px;
+        align-self: center;
+        justify-self: center;
+    }
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        &__li1 {
+            background-color: #AB20FD;
+            padding: 5px;
+        }
+    }
+    &__gallery {
+        &__img {
+            width: 80%;
+            align-self: center;
+            justify-self: center;
+        }
     }
 }
