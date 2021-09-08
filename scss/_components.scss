@@ -126,3 +126,22 @@ body {
         }
     }
 }
+
+.contact {
+    &__h2 {
+        align-self: center;
+        justify-self: center;
+    }
+    &__links {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        &__i {
+            font-size: 25px;
+            border: 2px solid #AB20FD;
+            border-radius: 50%;
+            padding: 10px;
+        }
+    }
+}

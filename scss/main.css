@@ -114,6 +114,23 @@ body {
   justify-self: center;
 }
 
+.contact__h2 {
+  align-self: center;
+  justify-self: center;
+}
+.contact__links {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__links__i {
+  font-size: 25px;
+  border: 2px solid #AB20FD;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -170,7 +187,7 @@ body {
 
 .contact {
   width: 90%;
-  margin: auto;
+  margin: 5vh auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
