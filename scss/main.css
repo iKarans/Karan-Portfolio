@@ -1,5 +1,5 @@
 body {
-  background-color: #141414;
+  background-color: #1f2026;
   color: #FBF8FD;
   font-family: "Roboto", sans-serif;
 }
@@ -75,6 +75,7 @@ body {
 }
 .about__stack {
   border: 5px solid #7D12FF;
+  border-radius: 50px;
   padding: 20px;
 }
 .about__stack__h3 {
@@ -89,6 +90,7 @@ body {
 }
 .about__skills {
   border: 5px solid #7D12FF;
+  border-radius: 50px;
   padding: 20px;
 }
 .about__skills__h3 {
@@ -116,8 +118,8 @@ body {
 }
 .portfolio__h2:after {
   display: block;
-  height: 2px;
-  width: 100px;
+  height: 5px;
+  width: 122px;
   background-color: #200589;
   content: "";
   margin: 10px auto 0px auto;
@@ -139,30 +141,34 @@ body {
   justify-self: center;
 }
 
+.contact {
+  background-color: #272a2f;
+}
 .contact__h2 {
+  margin-top: 5vh;
   align-self: center;
   justify-self: center;
   font-family: "Inter", sans-serif;
 }
 .contact__h2:after {
   display: block;
-  height: 2px;
-  width: 100px;
+  height: 5px;
+  width: 102px;
   background-color: #200589;
   content: "";
   margin: 10px auto 0px auto;
 }
 .contact__links {
-  width: 70%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+  justify-self: center;
+  align-self: center;
 }
 .contact__links__i {
   font-size: 25px;
-  border: 2px solid #AB20FD;
+  background-color: #AB20FD;
   border-radius: 50%;
   padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 5vh;
 }
 
 .lpage {
@@ -176,7 +182,7 @@ body {
 
 .about {
   width: 90%;
-  margin: 5vh auto 0 auto;
+  margin: 5vh auto 0px auto;
   display: grid;
   grid-template-rows: auto auto 1fr 1fr auto;
   grid-gap: 30px;
@@ -202,7 +208,7 @@ body {
 
 .portfolio {
   width: 90%;
-  margin: 5vh auto 0 auto;
+  margin: 5vh auto 0px auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
@@ -214,8 +220,8 @@ body {
 }
 
 .contact {
-  width: 90%;
-  margin: 5vh auto 0 auto;
+  width: 100%;
+  margin: 0px auto 0px auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
