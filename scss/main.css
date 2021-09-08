@@ -167,3 +167,12 @@ body {
   display: grid;
   grid-template-columns: 1fr;
 }
+
+.contact {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 30px;
+}
