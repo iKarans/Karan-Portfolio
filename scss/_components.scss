@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-family: "Inter", sans-serif;
+    font-size: 24px;
     &__socials {
         &__i1 {
             margin-right: 20px;
@@ -83,12 +84,12 @@ body {
         border: 5px solid #7D12FF;
         padding: 20px;
         &__h3 {
-            font-size: 25px;
+            font-size: 24px;
             align-self: center;
             justify-self: center;
         }
         i {
-            font-size: 25px;
+            font-size: 24px;
             align-self: center;
             justify-self: center;
         }
@@ -98,12 +99,12 @@ body {
         border: 5px solid #7D12FF;
         padding: 20px;
         &__h3 {
-            font-size: 25px;
+            font-size: 24px;
             align-self: center;
             justify-self: center;
         }
         i {
-            font-size: 25px;
+            font-size: 24px;
             align-self: center;
             justify-self: center;
         }
@@ -111,7 +112,7 @@ body {
     &__arrows {
         align-self: center;
         justify-self: center;
-        font-size: 25px;
+        font-size: 24px;
         color: #AB20FD;
     }
 }

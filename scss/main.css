@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-family: "Inter", sans-serif;
+  font-size: 24px;
 }
 .header__socials__i1 {
   margin-right: 20px;
@@ -77,12 +78,12 @@ body {
   padding: 20px;
 }
 .about__stack__h3 {
-  font-size: 25px;
+  font-size: 24px;
   align-self: center;
   justify-self: center;
 }
 .about__stack i {
-  font-size: 25px;
+  font-size: 24px;
   align-self: center;
   justify-self: center;
 }
@@ -91,19 +92,19 @@ body {
   padding: 20px;
 }
 .about__skills__h3 {
-  font-size: 25px;
+  font-size: 24px;
   align-self: center;
   justify-self: center;
 }
 .about__skills i {
-  font-size: 25px;
+  font-size: 24px;
   align-self: center;
   justify-self: center;
 }
 .about__arrows {
   align-self: center;
   justify-self: center;
-  font-size: 25px;
+  font-size: 24px;
   color: #AB20FD;
 }
 
@@ -163,12 +164,6 @@ body {
   padding: 10px;
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
 .lpage {
   height: 95vh;
   width: 90%;
@@ -224,4 +219,33 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-gap: 30px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .lpage {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .lpage__h1 {
+    font-size: 39px;
+    align-self: end;
+    justify-self: start;
+    text-align: left;
+  }
+  .lpage__btn {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: start;
+    justify-self: start;
+  }
+  .lpage__img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }
