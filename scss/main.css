@@ -1,6 +1,7 @@
 body {
   background-color: #141414;
   color: #FBF8FD;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -10,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Inter", sans-serif;
 }
 .header__socials__i1 {
   margin-right: 20px;
@@ -24,7 +26,7 @@ body {
   align-self: center;
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 30px;
+  font-size: 29px;
   margin-top: 30px;
 }
 .lpage__h1__span {
@@ -51,6 +53,7 @@ body {
   font-size: 27px;
   align-self: center;
   justify-self: center;
+  font-family: "Inter", sans-serif;
 }
 .about__p {
   font-size: 14px;
@@ -97,6 +100,7 @@ body {
   font-size: 27px;
   align-self: center;
   justify-self: center;
+  font-family: "Inter", sans-serif;
 }
 .portfolio__ul {
   display: flex;
@@ -112,6 +116,24 @@ body {
   width: 80%;
   align-self: center;
   justify-self: center;
+}
+
+.contact__h2 {
+  align-self: center;
+  justify-self: center;
+  font-family: "Inter", sans-serif;
+}
+.contact__links {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__links__i {
+  font-size: 25px;
+  border: 2px solid #AB20FD;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 * {
@@ -156,7 +178,6 @@ body {
 }
 
 .portfolio {
-  height: 95vh;
   width: 90%;
   margin: 5vh auto 0 auto;
   display: grid;
@@ -167,4 +188,13 @@ body {
 .portfolio__gallery {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.contact {
+  width: 90%;
+  margin: 5vh auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 30px;
 }

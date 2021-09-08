@@ -36,7 +36,7 @@
 }
 
 .portfolio {
-    height: 95vh;
+    // height: 95vh;
     width: 90%;
     margin: 5vh auto 0 auto;
     display: grid;
@@ -47,4 +47,13 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+}
+
+.contact {
+    width: 90%;
+    margin: 5vh auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
 }
