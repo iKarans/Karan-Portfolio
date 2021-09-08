@@ -29,7 +29,10 @@ body {
   font-size: 29px;
   margin-top: 30px;
 }
-.lpage__h1__span {
+.lpage__h1__span1 {
+  color: #7D12FF;
+}
+.lpage__h1__span2 {
   color: #AB20FD;
 }
 .lpage__btn {
@@ -55,6 +58,14 @@ body {
   justify-self: center;
   font-family: "Inter", sans-serif;
 }
+.about__h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #200589;
+  content: "";
+  margin: 10px auto 0px auto;
+}
 .about__p {
   font-size: 14px;
   text-align: center;
@@ -62,7 +73,7 @@ body {
   justify-self: center;
 }
 .about__stack {
-  border: 5px solid #AB20FD;
+  border: 5px solid #7D12FF;
   padding: 20px;
 }
 .about__stack__h3 {
@@ -102,6 +113,14 @@ body {
   justify-self: center;
   font-family: "Inter", sans-serif;
 }
+.portfolio__h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #200589;
+  content: "";
+  margin: 10px auto 0px auto;
+}
 .portfolio__ul {
   display: flex;
   justify-content: space-between;
@@ -122,6 +141,14 @@ body {
   align-self: center;
   justify-self: center;
   font-family: "Inter", sans-serif;
+}
+.contact__h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #200589;
+  content: "";
+  margin: 10px auto 0px auto;
 }
 .contact__links {
   width: 70%;

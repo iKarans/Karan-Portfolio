@@ -31,7 +31,10 @@ body {
         font-family: "Inter", sans-serif;
         font-size: 29px;
         margin-top: 30px;
-        &__span {
+        &__span1 {
+            color: #7D12FF;
+        }
+        &__span2 {
             color: #AB20FD;
         }
         
@@ -61,6 +64,14 @@ body {
         justify-self: center;
         font-family: "Inter", sans-serif;
     }
+    &__h2:after {
+        display:block;
+        height:2px;
+        width:100px;
+        background-color:#200589;
+        content:"";
+        margin: 10px auto 0px auto;
+    }
     &__p {
         font-size: 14px;
         text-align: center;
@@ -69,7 +80,7 @@ body {
 
     }
     &__stack {
-        border: 5px solid #AB20FD;
+        border: 5px solid #7D12FF;
         padding: 20px;
         &__h3 {
             font-size: 25px;
@@ -112,6 +123,14 @@ body {
         justify-self: center;
         font-family: "Inter", sans-serif;
     }
+    &__h2:after {
+        display:block;
+        height:2px;
+        width:100px;
+        background-color:#200589;
+        content:"";
+        margin: 10px auto 0px auto;
+    }
     &__ul {
         display: flex;
         justify-content: space-between;
@@ -136,6 +155,14 @@ body {
         align-self: center;
         justify-self: center;
         font-family: "Inter", sans-serif;
+    }
+    &__h2:after {
+        display:block;
+        height:2px;
+        width:100px;
+        background-color:#200589;
+        content:"";
+        margin: 10px auto 0px auto;
     }
     &__links {
         width: 70%;
