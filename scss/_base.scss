@@ -82,3 +82,11 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .portfolio {
+        &__gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
