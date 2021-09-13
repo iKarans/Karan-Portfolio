@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-  height: 5vh;
+  min-height: 5vh;
   width: 90%;
   margin: auto;
   display: flex;
@@ -31,26 +31,30 @@ body {
   margin-top: 30px;
 }
 .lpage__h1__span1 {
-  color: #7D12FF;
+  color: #2667FF;
 }
 .lpage__h1__span2 {
-  color: #AB20FD;
+  color: #3F8EFC;
 }
 .lpage__btn {
   justify-self: center;
   align-self: center;
-  padding: 13px 60px;
-  background-color: #AB20FD;
+  padding: 13px 0px;
+  background-color: #3F8EFC;
   border-radius: 25px;
   border: 0px;
   width: 225px;
   font-family: "Roboto", sans-serif;
   color: #FBF8FD;
+  text-align: center;
   font-size: 14px;
+  outline: none;
 }
 .lpage__img {
   justify-self: center;
   align-self: center;
+  margin-top: 30px;
+  height: 80%;
 }
 
 .about__h2 {
@@ -63,7 +67,7 @@ body {
   display: block;
   height: 3px;
   width: 100px;
-  background-color: #AB20FD;
+  background-color: #3F8EFC;
   content: "";
   margin: 10px auto 0px auto;
 }
@@ -74,7 +78,7 @@ body {
   justify-self: center;
 }
 .about__stack {
-  border: 5px solid #7D12FF;
+  border: 5px solid #2667FF;
   border-radius: 50px;
   padding: 20px;
 }
@@ -89,7 +93,7 @@ body {
   justify-self: center;
 }
 .about__skills {
-  border: 5px solid #7D12FF;
+  border: 5px solid #2667FF;
   border-radius: 50px;
   padding: 20px;
 }
@@ -107,7 +111,7 @@ body {
   align-self: center;
   justify-self: center;
   font-size: 24px;
-  color: #200589;
+  color: #3B28CC;
 }
 
 .portfolio__h2 {
@@ -120,7 +124,7 @@ body {
   display: block;
   height: 3px;
   width: 122px;
-  background-color: #AB20FD;
+  background-color: #3F8EFC;
   content: "";
   margin: 10px auto 0px auto;
 }
@@ -132,7 +136,7 @@ body {
   font-size: 14px;
 }
 .portfolio__ul__li1 {
-  background-color: #200589;
+  background-color: #2667FF;
   padding: 5px;
 }
 .portfolio__gallery__img {
@@ -154,25 +158,46 @@ body {
   display: block;
   height: 3px;
   width: 102px;
-  background-color: #AB20FD;
+  background-color: #3F8EFC;
   content: "";
   margin: 10px auto 0px auto;
+}
+.contact__p {
+  justify-self: center;
+  align-self: center;
+  color: #2667FF;
+  font-size: 14px;
 }
 .contact__links {
   justify-self: center;
   align-self: center;
 }
-.contact__links__i {
+.contact__links__i1 {
   font-size: 25px;
-  background-color: #7D12FF;
+  background-color: #3B28CC;
   border-radius: 50%;
   padding: 10px;
-  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 5vh;
+}
+.contact__links__i2 {
+  font-size: 25px;
+  background-color: #3B28CC;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 30px;
+  margin-bottom: 5vh;
+}
+.contact__links__i3 {
+  font-size: 25px;
+  background-color: #3B28CC;
+  border-radius: 50%;
+  padding: 10px;
   margin-bottom: 5vh;
 }
 
 .lpage {
-  height: 95vh;
+  min-height: 95vh;
   width: 90%;
   margin: auto;
   display: grid;
@@ -181,6 +206,7 @@ body {
 }
 
 .about {
+  min-height: 95vh;
   width: 90%;
   margin: 5vh auto 0px auto;
   display: grid;
@@ -190,7 +216,7 @@ body {
 .about__stack {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 .about__stack__h3 {
@@ -199,7 +225,7 @@ body {
 .about__skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
   grid-gap: 20px;
 }
 .about__skills__h3 {
@@ -207,11 +233,12 @@ body {
 }
 
 .portfolio {
+  min-height: 95vh;
   width: 90%;
   margin: 5vh auto 0px auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-gap: 30px;
 }
 .portfolio__gallery {
@@ -234,6 +261,59 @@ body {
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 375px) {
+  .lpage__h1 {
+    font-size: 34px;
+  }
+  .lpage__btn {
+    font-size: 16px;
+  }
+
+  .about__h2 {
+    font-size: 31px;
+  }
+  .about__p {
+    font-size: 16px;
+  }
+  .about__stack__h3 {
+    font-size: 28px;
+  }
+  .about__stacki {
+    font-size: 28px;
+  }
+  .about__skills__h3 {
+    font-size: 28px;
+  }
+  .about__skillsi {
+    font-size: 28px;
+  }
+  .about__arrows {
+    font-size: 28px;
+  }
+
+  .portfolio__h2 {
+    font-size: 31px;
+  }
+  .portfolio__ul {
+    font-size: 16px;
+  }
+
+  .contact__h2 {
+    font-size: 31px;
+  }
+  .contact__p {
+    font-size: 16px;
+  }
+  .contact__links__i1 {
+    font-size: 28px;
+  }
+  .contact__links__i2 {
+    font-size: 28px;
+  }
+  .contact__links__i3 {
+    font-size: 28px;
+  }
+}
 @media screen and (min-width: 768px) {
   .lpage {
     grid-template-columns: 2fr 1fr;
@@ -250,6 +330,7 @@ body {
     grid-column: 1/2;
     align-self: start;
     justify-self: start;
+    font-size: 18px;
   }
   .lpage__img {
     grid-column: 2/3;
@@ -263,6 +344,9 @@ body {
   .about__h2 {
     grid-column: 1/3;
     font-size: 36px;
+  }
+  .about__h2:after {
+    width: 120px;
   }
   .about__p {
     grid-column: 1/3;
@@ -294,6 +378,9 @@ body {
   .portfolio__h2 {
     font-size: 36px;
   }
+  .portfolio__h2:after {
+    width: 163px;
+  }
   .portfolio__ul {
     font-size: 19px;
   }
@@ -307,12 +394,77 @@ body {
   .contact__h2 {
     font-size: 36px;
   }
-  .contact__links {
+  .contact__h2:after {
+    width: 153px;
+  }
+  .contact__p {
+    font-size: 19px;
+  }
+  .contact__links__i1 {
+    font-size: 32px;
+  }
+  .contact__links__i2 {
+    font-size: 32px;
+  }
+  .contact__links__i3 {
     font-size: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
+  .lpage__h1 {
+    font-size: 60px;
+  }
+  .lpage__btn {
+    font-size: 28px;
+    padding: 16px 0px;
+    width: 320px;
+  }
+
+  .about__h2 {
+    font-size: 54px;
+  }
+  .about__p {
+    font-size: 28px;
+  }
+  .about__stack__h3 {
+    font-size: 49px;
+  }
+  .about__stack i {
+    font-size: 49px;
+  }
+  .about__skills__h3 {
+    font-size: 49px;
+  }
+  .about__skills i {
+    font-size: 49px;
+  }
+  .about__arrows {
+    font-size: 49px;
+  }
+
+  .portfolio__h2 {
+    font-size: 54px;
+  }
+  .portfolio__ul {
+    font-size: 28px;
+  }
   .portfolio__gallery {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact__h2 {
+    font-size: 54px;
+  }
+  .contact__p {
+    font-size: 28px;
+  }
+  .contact__links__i1 {
+    font-size: 49px;
+  }
+  .contact__links__i2 {
+    font-size: 49px;
+  }
+  .contact__links__i3 {
+    font-size: 49px;
   }
 }
