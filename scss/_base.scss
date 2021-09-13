@@ -5,6 +5,9 @@
 }
 
 @media screen and (min-width: 375px) {
+    .header {
+        font-size: 28px;
+    }
     .lpage {
         &__h1 {
             font-size: 34px;
@@ -70,6 +73,21 @@
 }
 
 @media screen and (min-width: 768px) {
+    .header {
+        font-size: 20px;
+        &__nav {
+            display: none;
+        }
+        &__tnav {
+            display: block;
+            flex: 2;
+        }
+        &__socials {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
     .lpage {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -89,6 +107,7 @@
         &__img {
             grid-column: 2 / 3;
             grid-row: 1 / 3;
+            height: 70%;
         }
     }
     .about {
