@@ -20,6 +20,12 @@
         &__h2 {
             font-size: 31px;
         }
+
+
+        &__h2:after {
+            width: 128px;
+        }
+
         &__p {
             font-size: 16px;
         }
@@ -47,6 +53,9 @@
         &__h2 {
             font-size: 31px;
         }
+        &__h2:after {
+            width: 166px;
+        }
         &__ul {
             font-size: 16px;
         }
@@ -54,6 +63,9 @@
     .contact {
         &__h2 {
             font-size: 31px;
+        }
+        &__h2:after {
+            width: 157px;
         }
         &__p {
             font-size: 16px;
@@ -118,7 +130,7 @@
             font-size: 36px;
         }
         &__h2:after {
-            width: 120px;
+            width: 149px;
         }
         &__p {
             grid-column: 1 / 3;
@@ -152,7 +164,7 @@
             font-size: 36px;
         }
         &__h2:after {
-            width: 163px;
+            width: 192px;
         }
         &__ul {
             font-size: 19px;
@@ -169,7 +181,7 @@
             font-size: 36px;
         }
         &__h2:after {
-            width: 153px;
+            width: 182px;
         }
         &__p {
             font-size: 19px;
@@ -203,6 +215,9 @@
         &__h2 {
             font-size: 54px;
         }
+        &__h2:after {
+            width: 223px;
+        }
         &__p {
             font-size: 28px;
         }
@@ -230,6 +245,9 @@
         &__h2 {
             font-size: 54px;
         }
+        &__h2:after {
+            width: 288px;
+        }
         &__ul {
             font-size: 28px;
         }
@@ -240,6 +258,9 @@
     .contact {
         &__h2 {
             font-size: 54px;
+        }
+        &__h2:after {
+            width: 273px;
         }
         &__p {
             font-size: 28px;
