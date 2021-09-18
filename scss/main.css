@@ -14,6 +14,8 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 25px;
   padding-top: 10px;
+  position: sticky;
+  top: 0;
 }
 .header__tnav {
   display: none;
@@ -32,6 +34,7 @@ body {
 }
 .header__nav__i:hover {
   color: #3F8EFC;
+  cursor: pointer;
 }
 .header__socials {
   flex: 2;
@@ -46,6 +49,7 @@ body {
 }
 .header__socials__i:hover {
   color: #3F8EFC;
+  cursor: pointer;
 }
 
 .lpage__h1 {
