@@ -272,13 +272,13 @@
         }
     }
     .contact {
-        &__h2 {
+        &__heading {
             font-size: 54px;
         }
-        &__h2:after {
+        &__heading:after {
             width: 273px;
         }
-        &__p {
+        &__email {
             font-size: 28px;
         }
         &__links {

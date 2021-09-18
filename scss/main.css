@@ -189,6 +189,16 @@ body {
 .portfolio__filter__all {
   background-color: #2667FF;
   padding: 5px;
+  cursor: pointer;
+}
+.portfolio__filter__javascript {
+  cursor: pointer;
+}
+.portfolio__filter__react {
+  cursor: pointer;
+}
+.portfolio__filter__java {
+  cursor: pointer;
 }
 .portfolio__gallery__project {
   width: 75%;
@@ -554,13 +564,13 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .contact__h2 {
+  .contact__heading {
     font-size: 54px;
   }
-  .contact__h2:after {
+  .contact__heading:after {
     width: 273px;
   }
-  .contact__p {
+  .contact__email {
     font-size: 28px;
   }
   .contact__links__link__linkedin {

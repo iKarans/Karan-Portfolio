@@ -200,6 +200,16 @@ body {
         &__all {
             background-color: #2667FF;
             padding: 5px;
+            cursor: pointer;
+        }
+        &__javascript {
+            cursor: pointer;
+        }
+        &__react {
+            cursor: pointer;
+        }
+        &__java{
+            cursor: pointer;
         }
     }
     &__gallery {
