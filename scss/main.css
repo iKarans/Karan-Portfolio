@@ -17,22 +17,22 @@ body {
   position: sticky;
   top: 0;
 }
-.header__tnav {
+.header__tablet-nav {
   display: none;
 }
-.header__tnav__ul {
+.header__tablet-nav__ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
-.header__tnav__ul__li a {
+.header__tablet-nav__ul__li a {
   text-decoration: none;
   color: white;
 }
-.header__tnav__ul__li a:hover {
+.header__tablet-nav__ul__li a:hover {
   color: #3F8EFC;
 }
-.header__nav__i:hover {
+.header__nav__hamburger:hover {
   color: #3F8EFC;
   cursor: pointer;
 }
@@ -41,18 +41,31 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-.header__socials__i1 {
+.header__socials__social1 {
+  color: white;
   margin-right: 20px;
 }
-.header__socials__i2 {
+.header__socials__social2 {
+  color: white;
   margin-right: 20px;
 }
-.header__socials__i:hover {
+.header__socials__social3 {
+  color: white;
+}
+.header__socials__social1:hover {
+  color: #3F8EFC;
+  cursor: pointer;
+}
+.header__socials__social2:hover {
+  color: #3F8EFC;
+  cursor: pointer;
+}
+.header__socials__social3:hover {
   color: #3F8EFC;
   cursor: pointer;
 }
 
-.lpage__h1 {
+.lpage__heading {
   text-align: center;
   justify-self: center;
   align-self: center;
@@ -61,10 +74,10 @@ body {
   font-size: 29px;
   margin-top: 30px;
 }
-.lpage__h1__span1 {
+.lpage__heading__span1 {
   color: #2667FF;
 }
-.lpage__h1__span2 {
+.lpage__heading__karan {
   color: #3F8EFC;
 }
 .lpage__btn {
@@ -84,20 +97,21 @@ body {
   text-align: center;
   font-size: 14px;
 }
-.lpage__img {
+.lpage__torch {
   justify-self: center;
   align-self: center;
   margin-top: 30px;
   height: 80%;
 }
 
-.about__h2 {
+.about__heading {
+  padding-top: 10vh;
   font-size: 27px;
   align-self: center;
   justify-self: center;
   font-family: "Inter", sans-serif;
 }
-.about__h2:after {
+.about__heading:after {
   display: block;
   height: 3px;
   width: 112px;
@@ -105,7 +119,7 @@ body {
   content: "";
   margin: 10px auto 0px auto;
 }
-.about__p {
+.about__about-me {
   font-size: 14px;
   text-align: center;
   align-self: center;
@@ -116,10 +130,11 @@ body {
   border-radius: 50px;
   padding: 20px;
 }
-.about__stack__h3 {
+.about__stack__heading {
   font-size: 24px;
   align-self: center;
   justify-self: center;
+  grid-column: 1/4;
 }
 .about__stack i {
   font-size: 24px;
@@ -131,10 +146,11 @@ body {
   border-radius: 50px;
   padding: 20px;
 }
-.about__skills__h3 {
+.about__skills__heading {
   font-size: 24px;
   align-self: center;
   justify-self: center;
+  grid-column: 1/4;
 }
 .about__skills i {
   font-size: 24px;
@@ -148,13 +164,14 @@ body {
   color: #3B28CC;
 }
 
-.portfolio__h2 {
+.portfolio__heading {
+  padding-top: 10vh;
   font-size: 27px;
   align-self: center;
   justify-self: center;
   font-family: "Inter", sans-serif;
 }
-.portfolio__h2:after {
+.portfolio__heading:after {
   display: block;
   height: 3px;
   width: 144px;
@@ -162,18 +179,18 @@ body {
   content: "";
   margin: 10px auto 0px auto;
 }
-.portfolio__ul {
+.portfolio__filter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   font-size: 14px;
 }
-.portfolio__ul__li1 {
+.portfolio__filter__all {
   background-color: #2667FF;
   padding: 5px;
 }
-.portfolio__gallery__img {
+.portfolio__gallery__project {
   width: 75%;
   align-self: center;
   justify-self: center;
@@ -182,13 +199,13 @@ body {
 .contact {
   background-color: #272a2f;
 }
-.contact__h2 {
+.contact__heading {
   margin-top: 5vh;
   align-self: center;
   justify-self: center;
   font-family: "Inter", sans-serif;
 }
-.contact__h2:after {
+.contact__heading:after {
   display: block;
   height: 3px;
   width: 122px;
@@ -196,7 +213,7 @@ body {
   content: "";
   margin: 10px auto 0px auto;
 }
-.contact__p {
+.contact__email {
   justify-self: center;
   align-self: center;
   color: #2667FF;
@@ -206,28 +223,34 @@ body {
   justify-self: center;
   align-self: center;
 }
-.contact__links__i1 {
+.contact__links__link__linkedin {
+  cursor: pointer;
   font-size: 25px;
   background-color: #3B28CC;
   border-radius: 50%;
   padding: 12px;
   margin-right: 30px;
   margin-bottom: 5vh;
+  color: white;
 }
-.contact__links__i2 {
+.contact__links__link__github {
+  cursor: pointer;
   font-size: 25px;
   background-color: #3B28CC;
   border-radius: 50%;
   padding: 12px;
   margin-right: 30px;
   margin-bottom: 5vh;
+  color: white;
 }
-.contact__links__i3 {
+.contact__links__link__cv {
+  cursor: pointer;
   font-size: 25px;
   background-color: #3B28CC;
   border-radius: 50%;
   padding: 12px;
   margin-bottom: 5vh;
+  color: white;
 }
 
 .lpage {
@@ -242,7 +265,7 @@ body {
 .about {
   min-height: 95vh;
   width: 90%;
-  margin: 5vh auto 0px auto;
+  margin: auto;
   display: grid;
   grid-template-rows: auto auto 1fr 1fr auto;
   grid-gap: 30px;
@@ -269,7 +292,7 @@ body {
 .portfolio {
   min-height: 95vh;
   width: 90%;
-  margin: 5vh auto 0px auto;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
@@ -300,64 +323,64 @@ body {
     font-size: 28px;
   }
 
-  .lpage__h1 {
+  .lpage__heading {
     font-size: 34px;
   }
   .lpage__btn a {
     font-size: 16px;
   }
 
-  .about__h2 {
+  .about__heading {
     font-size: 31px;
   }
-  .about__h2:after {
+  .about__heading:after {
     width: 128px;
   }
-  .about__p {
+  .about__about-me {
     font-size: 16px;
   }
-  .about__stack__h3 {
+  .about__stack__heading {
     font-size: 28px;
   }
-  .about__stacki {
+  .about__stack i {
     font-size: 28px;
   }
-  .about__skills__h3 {
+  .about__skills__heading {
     font-size: 28px;
   }
-  .about__skillsi {
+  .about__skills i {
     font-size: 28px;
   }
   .about__arrows {
     font-size: 28px;
   }
 
-  .portfolio__h2 {
+  .portfolio__heading {
     font-size: 31px;
   }
-  .portfolio__h2:after {
+  .portfolio__heading:after {
     width: 166px;
   }
-  .portfolio__ul {
+  .portfolio__filter {
     font-size: 16px;
   }
 
-  .contact__h2 {
+  .contact__heading {
     font-size: 31px;
   }
-  .contact__h2:after {
+  .contact__heading:after {
     width: 157px;
   }
-  .contact__p {
+  .contact__email {
     font-size: 16px;
   }
-  .contact__links__i1 {
+  .contact__links__link__linkedin {
     font-size: 28px;
   }
-  .contact__links__i2 {
+  .contact__links__link__github {
     font-size: 28px;
   }
-  .contact__links__i3 {
+  .contact__links__link__cv {
     font-size: 28px;
   }
 }
@@ -368,14 +391,14 @@ body {
   .header__nav {
     display: none;
   }
-  .header__tnav {
+  .header__tablet-nav {
     display: block;
     flex: 5;
   }
-  .header__socials__i1 {
+  .header__socials__social1 {
     margin-right: 30px;
   }
-  .header__socials__i2 {
+  .header__socials__social2 {
     margin-right: 30px;
   }
 
@@ -383,7 +406,7 @@ body {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .lpage__h1 {
+  .lpage__heading {
     font-size: 39px;
     align-self: end;
     justify-self: start;
@@ -398,7 +421,7 @@ body {
   .lpage__btn a {
     font-size: 18px;
   }
-  .lpage__img {
+  .lpage__torch {
     grid-column: 2/3;
     grid-row: 1/3;
     height: 70%;
@@ -408,21 +431,21 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr auto;
   }
-  .about__h2 {
+  .about__heading {
     grid-column: 1/3;
     font-size: 36px;
   }
-  .about__h2:after {
+  .about__heading:after {
     width: 149px;
   }
-  .about__p {
+  .about__about-me {
     grid-column: 1/3;
     font-size: 19px;
   }
   .about__stack {
     grid-column: 1/2;
   }
-  .about__stack__h3 {
+  .about__stack__heading {
     font-size: 32px;
   }
   .about__stack i {
@@ -431,7 +454,7 @@ body {
   .about__skills {
     grid-column: 2/3;
   }
-  .about__skills__h3 {
+  .about__skills__heading {
     font-size: 32px;
   }
   .about__skills i {
@@ -442,38 +465,38 @@ body {
     font-size: 32px;
   }
 
-  .portfolio__h2 {
+  .portfolio__heading {
     font-size: 36px;
   }
-  .portfolio__h2:after {
+  .portfolio__heading:after {
     width: 192px;
   }
-  .portfolio__ul {
+  .portfolio__filter {
     font-size: 19px;
   }
   .portfolio__gallery {
     grid-template-columns: 1fr 1fr;
   }
-  .portfolio__gallery__img {
+  .portfolio__gallery__project {
     width: 100%;
   }
 
-  .contact__h2 {
+  .contact__heading {
     font-size: 36px;
   }
-  .contact__h2:after {
+  .contact__heading:after {
     width: 182px;
   }
-  .contact__p {
+  .contact__email {
     font-size: 19px;
   }
-  .contact__links__i1 {
+  .contact__links__link__linkedin {
     font-size: 32px;
   }
-  .contact__links__i2 {
+  .contact__links__link__github {
     font-size: 32px;
   }
-  .contact__links__i3 {
+  .contact__links__link__cv {
     font-size: 32px;
   }
 }
@@ -482,7 +505,7 @@ body {
     font-size: 27px;
   }
 
-  .lpage__h1 {
+  .lpage__heading {
     font-size: 60px;
   }
   .lpage__btn {
@@ -493,22 +516,22 @@ body {
     font-size: 28px;
   }
 
-  .about__h2 {
+  .about__heading {
     font-size: 54px;
   }
-  .about__h2:after {
+  .about__heading:after {
     width: 223px;
   }
-  .about__p {
+  .about__about-me {
     font-size: 28px;
   }
-  .about__stack__h3 {
+  .about__stack__heading {
     font-size: 49px;
   }
   .about__stack i {
     font-size: 49px;
   }
-  .about__skills__h3 {
+  .about__skills__heading {
     font-size: 49px;
   }
   .about__skills i {
@@ -518,13 +541,13 @@ body {
     font-size: 49px;
   }
 
-  .portfolio__h2 {
+  .portfolio__heading {
     font-size: 54px;
   }
-  .portfolio__h2:after {
+  .portfolio__heading:after {
     width: 288px;
   }
-  .portfolio__ul {
+  .portfolio__filter {
     font-size: 28px;
   }
   .portfolio__gallery {
@@ -540,13 +563,13 @@ body {
   .contact__p {
     font-size: 28px;
   }
-  .contact__links__i1 {
+  .contact__links__link__linkedin {
     font-size: 49px;
   }
-  .contact__links__i2 {
+  .contact__links__link__github {
     font-size: 49px;
   }
-  .contact__links__i3 {
+  .contact__links__link__cv {
     font-size: 49px;
   }
 }

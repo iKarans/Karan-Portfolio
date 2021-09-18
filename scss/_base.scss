@@ -9,7 +9,7 @@
         font-size: 28px;
     }
     .lpage {
-        &__h1 {
+        &__heading {
             font-size: 34px;
         }
         &__btn {
@@ -19,31 +19,31 @@
         }
     }
     .about {
-        &__h2 {
+        &__heading {
             font-size: 31px;
         }
 
 
-        &__h2:after {
+        &__heading:after {
             width: 128px;
         }
 
-        &__p {
+        &__about-me {
             font-size: 16px;
         }
         &__stack {
-            &__h3 {
+            &__heading {
                 font-size:28px;
             }
-            &i {
+            i {
                 font-size: 28px;
             }
         }
         &__skills {
-            &__h3 {
+            &__heading {
                 font-size:28px;
             }
-            &i {
+            i {
                 font-size: 28px;
             }
         }
@@ -52,35 +52,37 @@
         }
     }
     .portfolio {
-        &__h2 {
+        &__heading {
             font-size: 31px;
         }
-        &__h2:after {
+        &__heading:after {
             width: 166px;
         }
-        &__ul {
+        &__filter {
             font-size: 16px;
         }
     }
     .contact {
-        &__h2 {
+        &__heading {
             font-size: 31px;
         }
-        &__h2:after {
+        &__heading:after {
             width: 157px;
         }
-        &__p {
+        &__email {
             font-size: 16px;
         }
         &__links {
-            &__i1 {
-                font-size: 28px;
-            }
-            &__i2 {
-                font-size: 28px;
-            }
-            &__i3 {
-                font-size: 28px;
+            &__link{
+                &__linkedin {
+                    font-size: 28px;
+                }
+                &__github {
+                    font-size: 28px;
+                }
+                &__cv {
+                    font-size: 28px;
+                }
             }
         }
     }
@@ -92,15 +94,15 @@
         &__nav {
             display: none;
         }
-        &__tnav {
+        &__tablet-nav {
             display: block;
             flex: 5;
         }
         &__socials {
-            &__i1 {
+            &__social1 {
                 margin-right: 30px;
             }
-            &__i2 {
+            &__social2 {
                 margin-right: 30px;
             }
         }
@@ -108,7 +110,7 @@
     .lpage {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
-        &__h1 {
+        &__heading {
             font-size: 39px;
             align-self: end;
             justify-self: start;
@@ -123,7 +125,7 @@
                 font-size: 18px;
             }
         }
-        &__img {
+        &__torch {
             grid-column: 2 / 3;
             grid-row: 1 / 3;
             height: 70%;
@@ -132,20 +134,20 @@
     .about {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 1fr auto;
-        &__h2 {
+        &__heading {
             grid-column: 1 / 3;
             font-size: 36px;
         }
-        &__h2:after {
+        &__heading:after {
             width: 149px;
         }
-        &__p {
+        &__about-me {
             grid-column: 1 / 3;
             font-size: 19px;
         }
         &__stack {
             grid-column: 1 / 2;
-            &__h3 {
+            &__heading {
                 font-size: 32px;
             }
             i {
@@ -154,7 +156,7 @@
         }
         &__skills {
             grid-column: 2 / 3;
-            &__h3 {
+            &__heading {
                 font-size: 32px;
             }
             i {
@@ -167,41 +169,43 @@
         }
     }
     .portfolio {
-        &__h2 {
+        &__heading {
             font-size: 36px;
         }
-        &__h2:after {
+        &__heading:after {
             width: 192px;
         }
-        &__ul {
+        &__filter {
             font-size: 19px;
         }
         &__gallery {
             grid-template-columns: 1fr 1fr;
-            &__img {
+            &__project {
                 width: 100%;
             }
         }
     }
     .contact {
-        &__h2 {
+        &__heading {
             font-size: 36px;
         }
-        &__h2:after {
+        &__heading:after {
             width: 182px;
         }
-        &__p {
+        &__email {
             font-size: 19px;
         }
         &__links {
-            &__i1 {
-                font-size: 32px;
-            }
-            &__i2 {
-                font-size: 32px;
-            }
-            &__i3 {
-                font-size: 32px;
+            &__link {
+                &__linkedin {
+                    font-size: 32px;
+                }
+                &__github {
+                    font-size: 32px;
+                }
+                &__cv {
+                    font-size: 32px;
+                }
             }
         }
     }
@@ -212,7 +216,7 @@
         font-size: 27px;
     }
     .lpage {
-        &__h1 {
+        &__heading {
             font-size: 60px;
         }
         &__btn {
@@ -224,17 +228,17 @@
         }
     }
     .about {
-        &__h2 {
+        &__heading {
             font-size: 54px;
         }
-        &__h2:after {
+        &__heading:after {
             width: 223px;
         }
-        &__p {
+        &__about-me {
             font-size: 28px;
         }
         &__stack {
-            &__h3 {
+            &__heading {
                 font-size: 49px;
             }
             i {
@@ -242,7 +246,7 @@
             }
         }
         &__skills {
-            &__h3 {
+            &__heading {
                 font-size: 49px;
             }
             i {
@@ -254,13 +258,13 @@
         }
     }
     .portfolio {
-        &__h2 {
+        &__heading {
             font-size: 54px;
         }
-        &__h2:after {
+        &__heading:after {
             width: 288px;
         }
-        &__ul {
+        &__filter {
             font-size: 28px;
         }
         &__gallery {
@@ -278,14 +282,16 @@
             font-size: 28px;
         }
         &__links {
-            &__i1 {
-                font-size: 49px;
-            }
-            &__i2 {
-                font-size: 49px;
-            }
-            &__i3 {
-                font-size: 49px;
+            &__link {
+                &__linkedin {
+                    font-size: 49px;
+                }
+                &__github {
+                    font-size: 49px;
+                }
+                &__cv {
+                    font-size: 49px;
+                }
             }
         }
     }
@@ -296,7 +302,7 @@
 //         font-size: 39px;
 //     }
 //     .lpage {
-//         &__h1 {
+//         &__heading {
 //             font-size: 86px;
 //         }
 //         &__btn {

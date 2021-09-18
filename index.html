@@ -13,40 +13,40 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <i class="fas fa-bars header__nav__i"></i>
+            <i class="fas fa-bars header__nav__hamburger"></i>
         </nav>
-        <nav class="header__tnav">
-            <ul class="header__tnav__ul">
-                <li class="header__tnav__ul__li"><a href="#Home">Home</a></li>
-                <li class="header__tnav__ul__li"><a href="#About">About</a></li>
-                <li class="header__tnav__ul__li"><a href="#Portfolio">Portfolio</a></li>
-                <li class="header__tnav__ul__li"><a href="#Contact">Contact</a></li>
+        <nav class="header__tablet-nav">
+            <ul class="header__tablet-nav__ul">
+                <li class="header__tablet-nav__ul__li"><a href="#Home">Home</a></li>
+                <li class="header__tablet-nav__ul__li"><a href="#About">About</a></li>
+                <li class="header__tablet-nav__ul__li"><a href="#Portfolio">Portfolio</a></li>
+                <li class="header__tablet-nav__ul__li"><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header__socials">
-            <i class="fab fa-linkedin-in header__socials__i header__socials__i1"></i>
-            <i class="fab fa-github header__socials__i header__socials__i2"></i>
-            <i class="far fa-file-pdf header__socials__i header__socials__i3"></i>
+            <a href="#" class="header__socials__social1"><i class="fab fa-linkedin-in header__socials__a__i header__socials__i1"></i></a>
+            <a href="#" class="header__socials__social2"><i class="fab fa-github header__socials__a__i header__socials__i2"></i></a>
+            <a href="#" class="header__socials__social3"><i class="far fa-file-pdf header__socials__a__i header__socials__i3"></i></a>
         </div>
     </header>
     <section class="lpage" id="Home">
-        <h1 class="lpage__h1">
+        <h1 class="lpage__heading">
             Hey.<br>
-            I'm <span class="lpage__h1__span1">&lt;</span><span class="lpage__h1__span2">Karan</span><span class="lpage__h1__span1">&gt;</span>.<br>
+            I'm <span class="lpage__heading__1">&lt;</span><span class="lpage__heading__karan">Karan</span><span class="lpage__h1__span1">&gt;</span>.<br>
             Software Developer.
         </h1>
         <button class="lpage__btn"><a href="#About">Let's Explore</a></button>
-        <img src="assets/torch.png" alt="laptop" class="lpage__img">
+        <img src="assets/torch.png" alt="laptop" class="lpage__torch">
     </section>
     <section class="about" id="About">
-        <h2 class="about__h2">
+        <h2 class="about__heading">
             About.()
         </h2>
-        <p class="about__p">
+        <p class="about__about-me">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur harum, dolorum ducimus quis aliquid tempora reiciendis architecto quae voluptate aliquam ad quia ratione tempore ut?
         </p>
         <div class="about__stack">
-            <h3 class="about__stack__h3">Stack</h3>
+            <h3 class="about__stack__heading">Stack</h3>
             <i class="fab fa-html5"></i>
             <i class="fab fa-html5"></i>
             <i class="fab fa-html5"></i>
@@ -61,7 +61,7 @@
             <i class="fab fa-html5"></i>
         </div>
         <div class="about__skills">
-            <h3 class="about__skills__h3">Skills</h3>
+            <h3 class="about__skills__heading">Skills</h3>
             <i class="fab fa-html5"></i>
             <i class="fab fa-html5"></i>
             <i class="fab fa-html5"></i>
@@ -78,33 +78,33 @@
         <i class="fas fa-angle-double-down about__arrows"></i>
     </section>
     <section class="portfolio" id="Portfolio">
-        <h2 class="portfolio__h2">
+        <h2 class="portfolio__heading">
             Portfolio.()
         </h2>
-        <ul class="portfolio__ul">
-            <li class="portfolio__ul__li1">All</li>
-            <li class="portfolio__ul__li2">Javascript</li>
-            <li class="portfolio__ul__li3">React.JS</li>
-            <li class="portfolio__ul__li4">Java</li>
+        <ul class="portfolio__filter">
+            <li class="portfolio__filter__all">All</li>
+            <li class="portfolio__filter__javascript">Javascript</li>
+            <li class="portfolio__filter__react.js">React.JS</li>
+            <li class="portfolio__filter__java">Java</li>
         </ul>
         <div class="portfolio__gallery">
-            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__img">
-            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__img">
-            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__img">
-            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__img">
-            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__img">
-            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__img">
+            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__project">
+            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__project">
+            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__project">
+            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__project">
+            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__project">
+            <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__project">
         </div>
     </section>
     <footer class="contact" id="Contact">
-        <h2 class="contact__h2">
+        <h2 class="contact__heading">
             Contact.()
         </h2>
-        <p class="contact__p">ikarans@icloud.com</p>
+        <p class="contact__email">ikarans@icloud.com</p>
         <div class="contact__links">
-            <i class="fab fa-linkedin contact__links__i1"></i>
-            <i class="fab fa-github-square contact__links__i2"></i>
-            <i class="fas fa-file-pdf contact__links__i3"></i>
+            <a href=# class="contact__links__link"><i class="fab fa-linkedin contact__links__link__linkedin"></i></a>
+            <a href="#" class="contact__links__link"><i class="fab fa-github-square contact__links__link__github"></i></a>
+            <a href="#" class="contact__links__link"><i class="fas fa-file-pdf contact__links__link__cv"></i></a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/e61e79e207.js" crossorigin="anonymous"></script>

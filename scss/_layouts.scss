@@ -10,7 +10,7 @@
 .about {
     min-height: 95vh;
     width: 90%;
-    margin: 5vh auto 0px auto;
+    margin: auto;
     display: grid;
     grid-template-rows: auto auto 1fr 1fr auto;
     grid-gap: 30px;
@@ -38,7 +38,7 @@
 .portfolio {
     min-height: 95vh;
     width: 90%;
-    margin: 5vh auto 0px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;

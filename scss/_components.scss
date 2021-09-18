@@ -16,7 +16,7 @@ body {
     padding-top: 10px;
     position: sticky;
     top: 0;
-    &__tnav {
+    &__tablet-nav {
         display: none;
         &__ul {
             display: flex;
@@ -34,7 +34,7 @@ body {
         }
     }
     &__nav {
-        &__i:hover {
+        &__hamburger:hover {
             color: #3F8EFC;
             cursor: pointer;
         }
@@ -43,13 +43,26 @@ body {
         flex: 2;
         display: flex;
         justify-content: flex-end;
-        &__i1 {
+        &__social1 {
+            color: white;
             margin-right: 20px;
         }
-        &__i2 {
+        &__social2 {
+            color: white;
             margin-right: 20px;
         }
-        &__i:hover {
+        &__social3 {
+            color: white;
+        }
+        &__social1:hover {
+            color: #3F8EFC;
+            cursor: pointer;
+        }
+        &__social2:hover {
+            color: #3F8EFC;
+            cursor: pointer;
+        }
+        &__social3:hover {
             color: #3F8EFC;
             cursor: pointer;
         }
@@ -57,7 +70,7 @@ body {
 }
 
 .lpage {
-    &__h1 {
+    &__heading {
         text-align: center;
         justify-self: center;
         align-self: center;
@@ -68,7 +81,7 @@ body {
         &__span1 {
             color: #2667FF;
         }
-        &__span2 {
+        &__karan {
             color: #3F8EFC;
         }
     }
@@ -90,7 +103,7 @@ body {
             font-size: 14px;
         }
     }
-    &__img {
+    &__torch {
         justify-self: center;
         align-self: center;
         margin-top: 30px;
@@ -99,13 +112,14 @@ body {
 }
 
 .about {
-    &__h2 {
+    &__heading {
+        padding-top: 10vh;
         font-size: 27px;
         align-self: center;
         justify-self: center;
         font-family: "Inter", sans-serif;
     }
-    &__h2:after {
+    &__heading:after {
         display:block;
         height:3px;
         width:112px;
@@ -113,7 +127,7 @@ body {
         content:"";
         margin: 10px auto 0px auto;
     }
-    &__p {
+    &__about-me {
         font-size: 14px;
         text-align: center;
         align-self: center;
@@ -124,10 +138,11 @@ body {
         border: 5px solid #2667FF;
         border-radius: 50px;
         padding: 20px;
-        &__h3 {
+        &__heading {
             font-size: 24px;
             align-self: center;
             justify-self: center;
+            grid-column: 1 / 4;
         }
         i {
             font-size: 24px;
@@ -140,10 +155,11 @@ body {
         border: 5px solid #2667FF;
         border-radius: 50px;
         padding: 20px;
-        &__h3 {
+        &__heading {
             font-size: 24px;
             align-self: center;
             justify-self: center;
+            grid-column: 1 / 4;
         }
         i {
             font-size: 24px;
@@ -160,13 +176,14 @@ body {
 }
 
 .portfolio {
-    &__h2{
+    &__heading{
+        padding-top: 10vh;
         font-size: 27px;
         align-self: center;
         justify-self: center;
         font-family: "Inter", sans-serif;
     }
-    &__h2:after {
+    &__heading:after {
         display: block;
         height: 3px;
         width: 144px;
@@ -174,19 +191,19 @@ body {
         content: "";
         margin: 10px auto 0px auto;
     }
-    &__ul {
+    &__filter {
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style: none;
         font-size: 14px;
-        &__li1 {
+        &__all {
             background-color: #2667FF;
             padding: 5px;
         }
     }
     &__gallery {
-        &__img {
+        &__project {
             width: 75%;
             align-self: center;
             justify-self: center;
@@ -196,13 +213,13 @@ body {
 
 .contact {
     background-color: #272a2f;
-    &__h2 {
+    &__heading {
         margin-top: 5vh;
         align-self: center;
         justify-self: center;
         font-family: "Inter", sans-serif;
     }
-    &__h2:after {
+    &__heading:after {
         display: block;
         height: 3px;
         width: 122px;
@@ -210,7 +227,7 @@ body {
         content: "";
         margin: 10px auto 0px auto;
     }
-    &__p {
+    &__email {
         justify-self: center;
         align-self: center;
         color: #2667FF;
@@ -223,28 +240,37 @@ body {
         // justify-content: space-between;
         justify-self: center;
         align-self: center;
-        &__i1 {
-            font-size: 25px;
-            background-color: #3B28CC;
-            border-radius: 50%;
-            padding: 12px;
-            margin-right: 30px;
-            margin-bottom: 5vh;
-        }
-        &__i2 {
-            font-size: 25px;
-            background-color: #3B28CC;
-            border-radius: 50%;
-            padding: 12px;
-            margin-right: 30px;
-            margin-bottom: 5vh;
-        }
-        &__i3 {
-            font-size: 25px;
-            background-color: #3B28CC;
-            border-radius: 50%;
-            padding: 12px;
-            margin-bottom: 5vh;
+        &__link{
+            &__linkedin {
+                cursor: pointer;
+                font-size: 25px;
+                background-color: #3B28CC;
+                border-radius: 50%;
+                padding: 12px;
+                margin-right: 30px;
+                margin-bottom: 5vh;
+                color: white;
+                
+            }
+            &__github {
+                cursor: pointer;
+                font-size: 25px;
+                background-color: #3B28CC;
+                border-radius: 50%;
+                padding: 12px;
+                margin-right: 30px;
+                margin-bottom: 5vh;
+                color: white;
+            }
+            &__cv {
+                cursor: pointer;
+                font-size: 25px;
+                background-color: #3B28CC;
+                border-radius: 50%;
+                padding: 12px;
+                margin-bottom: 5vh;
+                color: white;
+            }
         }
     }
 }
