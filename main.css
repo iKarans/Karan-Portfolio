@@ -23,12 +23,11 @@ body {
   justify-content: space-between;
   list-style: none;
 }
-.header__tnav__ul__li a {
-  text-decoration: none;
-  color: white;
-}
-.header__tnav__ul__li a:hover {
+.header__tnav__ul__li:hover {
   color: #3F8EFC;
+}
+.header__nav {
+  flex: 3;
 }
 .header__nav__i:hover {
   color: #3F8EFC;
@@ -71,14 +70,11 @@ body {
   border-radius: 25px;
   border: 0px;
   width: 225px;
-  outline: none;
-}
-.lpage__btn a {
-  text-decoration: none;
   font-family: "Roboto", sans-serif;
   color: #FBF8FD;
   text-align: center;
   font-size: 14px;
+  outline: none;
 }
 .lpage__img {
   justify-self: center;
@@ -299,7 +295,7 @@ body {
   .lpage__h1 {
     font-size: 34px;
   }
-  .lpage__btn a {
+  .lpage__btn {
     font-size: 16px;
   }
 
@@ -390,8 +386,6 @@ body {
     grid-column: 1/2;
     align-self: start;
     justify-self: start;
-  }
-  .lpage__btn a {
     font-size: 18px;
   }
   .lpage__img {
@@ -482,11 +476,9 @@ body {
     font-size: 60px;
   }
   .lpage__btn {
+    font-size: 28px;
     padding: 16px 0px;
     width: 320px;
-  }
-  .lpage__btn a {
-    font-size: 28px;
   }
 
   .about__h2 {
@@ -546,3 +538,5 @@ body {
     font-size: 49px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

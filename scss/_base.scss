@@ -13,7 +13,9 @@
             font-size: 34px;
         }
         &__btn {
-            font-size: 16px;
+            a {
+                font-size: 16px;
+            }
         }
     }
     .about {
@@ -86,18 +88,21 @@
 
 @media screen and (min-width: 768px) {
     .header {
-        font-size: 20px;
+        font-size: 18px;
         &__nav {
             display: none;
         }
         &__tnav {
             display: block;
-            flex: 2;
+            flex: 5;
         }
         &__socials {
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
+            &__i1 {
+                margin-right: 30px;
+            }
+            &__i2 {
+                margin-right: 30px;
+            }
         }
     }
     .lpage {
@@ -114,7 +119,9 @@
             grid-column: 1 / 2;
             align-self: start;
             justify-self: start;
-            font-size: 18px;
+            a {
+                font-size: 18px;
+            }
         }
         &__img {
             grid-column: 2 / 3;
@@ -201,14 +208,19 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .header {
+        font-size: 27px;
+    }
     .lpage {
         &__h1 {
             font-size: 60px;
         }
         &__btn {
-            font-size: 28px;
             padding: 16px 0px;
             width: 320px;
+            a {
+                font-size: 28px;
+            }
         }
     }
     .about {
@@ -278,3 +290,85 @@
         }
     }
 }
+
+// @media screen and (min-width: 1440px) {
+//     .header {
+//         font-size: 39px;
+//     }
+//     .lpage {
+//         &__h1 {
+//             font-size: 86px;
+//         }
+//         &__btn {
+//             font-size: 28px;
+//             padding: 25px 0px;
+//             width: 500px;
+//         }
+//     }
+//     .about {
+//         &__h2 {
+//             font-size:78px;
+//         }
+//         &__h2:after {
+//             width: 322px;
+//         }
+//         &__p {
+//             font-size: 42px;
+//         }
+//         &__stack {
+//             &__h3 {
+//                 font-size: 70px;
+//             }
+//             i {
+//                 font-size: 70px;
+//             }
+//         }
+//         &__skills {
+//             &__h3 {
+//                 font-size: 70px;
+//             }
+//             i {
+//                 font-size: 70px;
+//             }
+//         }
+//         &__arrows {
+//             font-size: 70px;
+//         }
+//     }
+//     .portfolio {
+//         &__h2 {
+//             font-size:78px;
+//         }
+//         &__h2:after {
+//             width: 416px;
+//         }
+//         &__ul {
+//             font-size: 42px;
+//         }
+//         &__gallery {
+//             grid-template-columns: 1fr 1fr 1fr;
+//         }
+//     }
+//     .contact {
+//         &__h2 {
+//             font-size: 78px;
+//         }
+//         &__h2:after {
+//             width: 394px;
+//         }
+//         &__p {
+//             font-size: 42px;
+//         }
+//         &__links {
+//             &__i1 {
+//                 font-size: 70px;
+//             }
+//             &__i2 {
+//                 font-size: 70px;
+//             }
+//             &__i3 {
+//                 font-size: 70px;
+//             }
+//         }
+//     }
+// }

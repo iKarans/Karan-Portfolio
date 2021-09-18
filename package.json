@@ -1,0 +1,23 @@
+{
+  "name": "karanp",
+  "version": "1.0.0",
+  "description": "\"Scss compiler\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass --watch scss/main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iKarans/KaranP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iKarans/KaranP/issues"
+  },
+  "homepage": "https://github.com/iKarans/KaranP#readme",
+  "devDependencies": {
+    "sass": "^1.41.1"
+  }
+}

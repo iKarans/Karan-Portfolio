@@ -10,23 +10,44 @@ body {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-family: "Inter", sans-serif;
     font-size: 25px;
+    padding-top: 10px;
     &__tnav {
         display: none;
         &__ul {
             display: flex;
             justify-content: space-between;
             list-style: none;
+            &__li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover {
+                    color: #3F8EFC;
+                }
+            }
+        }
+    }
+    &__nav {
+        &__i:hover {
+            color: #3F8EFC;
         }
     }
     &__socials {
+        flex: 2;
+        display: flex;
+        justify-content: flex-end;
         &__i1 {
             margin-right: 20px;
         }
         &__i2 {
             margin-right: 20px;
+        }
+        &__i:hover {
+            color: #3F8EFC;
         }
     }
 }
@@ -46,7 +67,6 @@ body {
         &__span2 {
             color: #3F8EFC;
         }
-        
     }
     &__btn {
         justify-self: center;
@@ -56,11 +76,15 @@ body {
         border-radius: 25px;
         border: 0px;
         width: 225px;
-        font-family: "Roboto", sans-serif;
-        color: #FBF8FD;
-        text-align: center;
-        font-size: 14px;
+
         outline: none;
+        a {
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            color: #FBF8FD;
+            text-align: center;
+            font-size: 14px;
+        }
     }
     &__img {
         justify-self: center;
@@ -159,7 +183,7 @@ body {
     }
     &__gallery {
         &__img {
-            width: 80%;
+            width: 75%;
             align-self: center;
             justify-self: center;
         }
