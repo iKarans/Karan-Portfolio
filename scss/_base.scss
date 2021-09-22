@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 375px) {
     .header {
-        font-size: 28px;
+        font-size: 18px;
     }
     .lpage {
         &__heading {
@@ -88,6 +88,133 @@
     }
 }
 
+@media screen and (min-width: 650px) {
+    .header {
+        font-size: 18px;
+        &__nav {
+            display: none;
+        }
+        &__tablet-nav {
+            display: block;
+            flex: 5;
+        }
+        &__socials {
+            display: flex;
+        }
+        &__socials {
+            &__social1 {
+                margin-right: 30px;
+            }
+            &__social2 {
+                margin-right: 30px;
+            }
+        }
+    }
+    .lpage {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        &__heading {
+            font-size: 32px;
+            align-self: end;
+            justify-self: start;
+            text-align: left;
+        }
+        &__btn {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            align-self: start;
+            justify-self: start;
+            width: 180px;
+            padding: 9px 0px;
+            a {
+                font-size: 16px;
+            }
+        }
+        &__torch {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+            height: 70%;
+        }
+    }
+    .about {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        &__heading {
+            grid-column: 1 / 3;
+            font-size: 29px;
+        }
+        &__heading:after {
+            width: 120px;
+        }
+        &__about-me {
+            grid-column: 1 / 3;
+            font-size: 16px;
+        }
+        &__stack {
+            grid-column: 1 / 2;
+            &__heading {
+                font-size: 26px;
+            }
+            i {
+                font-size: 26px;
+            }
+        }
+        &__skills {
+            grid-column: 2 / 3;
+            &__heading {
+                font-size: 26px;
+            }
+            i {
+                font-size: 26px;
+            }
+        }
+        &__arrows {
+            grid-column: 1 / 3;
+            font-size: 26px;
+        }
+    }
+    .portfolio {
+        &__heading {
+            font-size: 29px;
+        }
+        &__heading:after {
+            width: 155px;
+        }
+        &__filter {
+            font-size: 16px;
+        }
+        &__gallery {
+            grid-template-columns: 1fr 1fr;
+            &__project {
+                width: 100%;
+            }
+        }
+    }
+    .contact {
+        &__heading {
+            font-size: 29px;
+        }
+        &__heading:after {
+            width: 147px;
+        }
+        &__email {
+            font-size: 16px;
+        }
+        &__links {
+            &__link {
+                &__linkedin {
+                    font-size: 26px;
+                }
+                &__github {
+                    font-size: 26px;
+                }
+                &__cv {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
 @media screen and (min-width: 768px) {
     .header {
         font-size: 18px;
@@ -97,6 +224,9 @@
         &__tablet-nav {
             display: block;
             flex: 5;
+        }
+        &__socials {
+            display: flex;
         }
         &__socials {
             &__social1 {
