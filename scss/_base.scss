@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 375px) {
     .header {
-        font-size: 18px;
+        font-size: 17px;
     }
     .lpage {
         &__heading {
@@ -95,8 +95,7 @@
             display: none;
         }
         &__tablet-nav {
-            display: block;
-            flex: 5;
+            display: flex;
         }
         &__socials {
             display: flex;
@@ -218,23 +217,8 @@
 @media screen and (min-width: 768px) {
     .header {
         font-size: 18px;
-        &__nav {
-            display: none;
-        }
-        &__tablet-nav {
-            display: block;
-            flex: 5;
-        }
-        &__socials {
-            display: flex;
-        }
-        &__socials {
-            &__social1 {
-                margin-right: 30px;
-            }
-            &__social2 {
-                margin-right: 30px;
-            }
+        img {
+            height: 34px;
         }
     }
     .lpage {
@@ -343,7 +327,10 @@
 
 @media screen and (min-width: 1024px) {
     .header {
-        font-size: 27px;
+        font-size: 25px;
+        img {
+            height: 37px;
+        }
     }
     .lpage {
         &__heading {

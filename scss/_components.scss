@@ -6,24 +6,26 @@ body {
 
 
 .header {
-    min-height: 4vh;
-    width: 90%;
+    min-height: 6vh;
+    width: 95%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    padding-top: 10px;
+    font-size: 14px;
     position: sticky;
     top: 0;
     background-color: rgb(31, 32, 38, 0.9);
+    img {
+        height: 27px;
+    }
     &__nav {
-        width: 100%;
-        min-height: 5vh;
+        flex: 1;
         &__ul {
             display: flex;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: space-around;
             list-style: none;
             &__li{
                 a {
@@ -39,10 +41,12 @@ body {
 
     &__tablet-nav {
         display: none;
-        flex: 5;
+        align-items: center;
+        flex: 1;
         &__ul {
+            width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             list-style: none;
             &__li {
                 a {
@@ -58,28 +62,27 @@ body {
 
     &__socials {
         display: none;
-        flex: 2;
         justify-content: flex-end;
-        &__social1 {
+        &__linkedin {
             color: white;
             margin-right: 20px;
         }
-        &__social2 {
+        &__github {
             color: white;
             margin-right: 20px;
         }
-        &__social3 {
+        &__cv {
             color: white;
         }
-        &__social1:hover {
+        &__linkedin:hover {
             color: #3F8EFC;
             cursor: pointer;
         }
-        &__social2:hover {
+        &__github:hover {
             color: #3F8EFC;
             cursor: pointer;
         }
-        &__social3:hover {
+        &__cv:hover {
             color: #3F8EFC;
             cursor: pointer;
         }

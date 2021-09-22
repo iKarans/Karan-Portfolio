@@ -5,26 +5,28 @@ body {
 }
 
 .header {
-  min-height: 4vh;
-  width: 90%;
+  min-height: 6vh;
+  width: 95%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
-  padding-top: 10px;
+  font-size: 14px;
   position: sticky;
   top: 0;
   background-color: rgba(31, 32, 38, 0.9);
 }
+.header img {
+  height: 27px;
+}
 .header__nav {
-  width: 100%;
-  min-height: 5vh;
+  flex: 1;
 }
 .header__nav__ul {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
   list-style: none;
 }
 .header__nav__ul__li a {
@@ -36,11 +38,13 @@ body {
 }
 .header__tablet-nav {
   display: none;
-  flex: 5;
+  align-items: center;
+  flex: 1;
 }
 .header__tablet-nav__ul {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 .header__tablet-nav__ul__li a {
@@ -52,29 +56,28 @@ body {
 }
 .header__socials {
   display: none;
-  flex: 2;
   justify-content: flex-end;
 }
-.header__socials__social1 {
+.header__socials__linkedin {
   color: white;
   margin-right: 20px;
 }
-.header__socials__social2 {
+.header__socials__github {
   color: white;
   margin-right: 20px;
 }
-.header__socials__social3 {
+.header__socials__cv {
   color: white;
 }
-.header__socials__social1:hover {
+.header__socials__linkedin:hover {
   color: #3F8EFC;
   cursor: pointer;
 }
-.header__socials__social2:hover {
+.header__socials__github:hover {
   color: #3F8EFC;
   cursor: pointer;
 }
-.header__socials__social3:hover {
+.header__socials__cv:hover {
   color: #3F8EFC;
   cursor: pointer;
 }
@@ -344,7 +347,7 @@ body {
 
 @media screen and (min-width: 375px) {
   .header {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .lpage__heading {
@@ -416,8 +419,7 @@ body {
     display: none;
   }
   .header__tablet-nav {
-    display: block;
-    flex: 5;
+    display: flex;
   }
   .header__socials {
     display: flex;
@@ -533,21 +535,8 @@ body {
   .header {
     font-size: 18px;
   }
-  .header__nav {
-    display: none;
-  }
-  .header__tablet-nav {
-    display: block;
-    flex: 5;
-  }
-  .header__socials {
-    display: flex;
-  }
-  .header__socials__social1 {
-    margin-right: 30px;
-  }
-  .header__socials__social2 {
-    margin-right: 30px;
+  .header img {
+    height: 34px;
   }
 
   .lpage {
@@ -650,7 +639,10 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .header {
-    font-size: 27px;
+    font-size: 25px;
+  }
+  .header img {
+    height: 37px;
   }
 
   .lpage__heading {
