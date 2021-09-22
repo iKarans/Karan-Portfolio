@@ -245,6 +245,7 @@ body {
   align-self: center;
   color: #2667FF;
   font-size: 14px;
+  text-decoration: none;
 }
 .contact__links {
   justify-self: center;
