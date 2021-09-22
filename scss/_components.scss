@@ -4,20 +4,42 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
 .header {
-    min-height: 5vh;
+    min-height: 4vh;
     width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Inter", sans-serif;
-    font-size: 25px;
+    font-size: 16px;
     padding-top: 10px;
     position: sticky;
     top: 0;
+    background-color: rgb(31, 32, 38, 0.9);
+    &__nav {
+        width: 100%;
+        min-height: 5vh;
+        &__ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            &__li{
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: #3F8EFC;
+                }
+            }
+        }
+    }
+
     &__tablet-nav {
         display: none;
+        flex: 5;
         &__ul {
             display: flex;
             justify-content: space-between;
@@ -33,15 +55,10 @@ body {
             }
         }
     }
-    &__nav {
-        &__hamburger:hover {
-            color: #3F8EFC;
-            cursor: pointer;
-        }
-    }
+
     &__socials {
+        display: none;
         flex: 2;
-        display: flex;
         justify-content: flex-end;
         &__social1 {
             color: white;
@@ -77,7 +94,7 @@ body {
         text-align: center;
         font-family: "Inter", sans-serif;
         font-size: 29px;
-        margin-top: 30px;
+        margin-top: 6vh;
         &__span1 {
             color: #2667FF;
         }
