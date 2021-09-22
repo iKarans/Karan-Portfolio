@@ -69,10 +69,10 @@
         &__heading:after {
             width: 157px;
         }
-        &__email {
-            font-size: 16px;
-        }
         &__links {
+            &__memoji {
+                height: 29px;
+            }
             &__link{
                 &__linkedin {
                     font-size: 28px;
@@ -81,6 +81,9 @@
                     font-size: 28px;
                 }
                 &__cv {
+                    font-size: 28px;
+                }
+                &__email {
                     font-size: 28px;
                 }
             }
@@ -196,9 +199,6 @@
         &__heading:after {
             width: 147px;
         }
-        &__email {
-            font-size: 16px;
-        }
         &__links {
             &__link {
                 &__linkedin {
@@ -208,6 +208,9 @@
                     font-size: 26px;
                 }
                 &__cv {
+                    font-size: 26px;
+                }
+                &__email {
                     font-size: 26px;
                 }
             }
@@ -306,10 +309,10 @@
         &__heading:after {
             width: 182px;
         }
-        &__email {
-            font-size: 19px;
-        }
         &__links {
+            &__memoji {
+                height: 32px;
+            }
             &__link {
                 &__linkedin {
                     font-size: 32px;
@@ -318,6 +321,9 @@
                     font-size: 32px;
                 }
                 &__cv {
+                    font-size: 32px;
+                }
+                &__email {
                     font-size: 32px;
                 }
             }
@@ -395,10 +401,10 @@
         &__heading:after {
             width: 273px;
         }
-        &__email {
-            font-size: 28px;
-        }
         &__links {
+            &__memoji {
+                height: 49px;
+            }
             &__link {
                 &__linkedin {
                     font-size: 49px;
@@ -407,6 +413,9 @@
                     font-size: 49px;
                 }
                 &__cv {
+                    font-size: 49px;
+                }
+                &__email {
                     font-size: 49px;
                 }
             }

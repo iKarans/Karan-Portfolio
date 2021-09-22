@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-  min-height: 6vh;
+  min-height: 5vh;
   width: 95%;
   margin: auto;
   display: flex;
@@ -96,6 +96,9 @@ body {
 }
 .lpage__heading__karan {
   color: #3F8EFC;
+}
+.lpage__heading__memoji {
+  height: 35px;
 }
 .lpage__btn {
   justify-self: center;
@@ -240,45 +243,51 @@ body {
   content: "";
   margin: 10px auto 0px auto;
 }
-.contact__email {
-  justify-self: center;
-  align-self: center;
-  color: #2667FF;
-  font-size: 14px;
-  text-decoration: none;
-}
 .contact__links {
   justify-self: center;
   align-self: center;
 }
+.contact__links__memoji {
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 30px;
+  color: #2667FF;
+}
+.contact__links__memoji:hover {
+  transform: scale(1.25);
+}
 .contact__links__link__linkedin {
   cursor: pointer;
   font-size: 25px;
-  background-color: #3B28CC;
-  border-radius: 50%;
-  padding: 12px;
   margin-right: 30px;
-  margin-bottom: 5vh;
-  color: white;
+  color: #2667FF;
 }
 .contact__links__link__github {
   cursor: pointer;
   font-size: 25px;
-  background-color: #3B28CC;
-  border-radius: 50%;
-  padding: 12px;
   margin-right: 30px;
-  margin-bottom: 5vh;
-  color: white;
+  color: #2667FF;
 }
 .contact__links__link__cv {
   cursor: pointer;
   font-size: 25px;
-  background-color: #3B28CC;
-  border-radius: 50%;
-  padding: 12px;
-  margin-bottom: 5vh;
+  margin-right: 30px;
+  color: #2667FF;
+}
+.contact__links__link__email {
+  cursor: pointer;
+  font-size: 25px;
+  color: #2667FF;
+}
+.contact__links__link__linkedin:hover, .contact__links__link__github:hover, .contact__links__link__cv:hover, .contact__links__link__email:hover {
   color: white;
+  transform: scale(1.25);
+}
+.contact__legal {
+  color: #3B28CC;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 5vh;
 }
 
 .lpage {
@@ -332,11 +341,11 @@ body {
 }
 
 .contact {
-  width: 100%;
+  width: 90%;
   margin: 0px auto 0px auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-gap: 30px;
 }
 
@@ -399,8 +408,8 @@ body {
   .contact__heading:after {
     width: 157px;
   }
-  .contact__email {
-    font-size: 16px;
+  .contact__links__memoji {
+    height: 29px;
   }
   .contact__links__link__linkedin {
     font-size: 28px;
@@ -409,6 +418,9 @@ body {
     font-size: 28px;
   }
   .contact__links__link__cv {
+    font-size: 28px;
+  }
+  .contact__links__link__email {
     font-size: 28px;
   }
 }
@@ -519,9 +531,6 @@ body {
   .contact__heading:after {
     width: 147px;
   }
-  .contact__email {
-    font-size: 16px;
-  }
   .contact__links__link__linkedin {
     font-size: 26px;
   }
@@ -529,6 +538,9 @@ body {
     font-size: 26px;
   }
   .contact__links__link__cv {
+    font-size: 26px;
+  }
+  .contact__links__link__email {
     font-size: 26px;
   }
 }
@@ -625,8 +637,8 @@ body {
   .contact__heading:after {
     width: 182px;
   }
-  .contact__email {
-    font-size: 19px;
+  .contact__links__memoji {
+    height: 32px;
   }
   .contact__links__link__linkedin {
     font-size: 32px;
@@ -635,6 +647,9 @@ body {
     font-size: 32px;
   }
   .contact__links__link__cv {
+    font-size: 32px;
+  }
+  .contact__links__link__email {
     font-size: 32px;
   }
 }
@@ -701,8 +716,8 @@ body {
   .contact__heading:after {
     width: 273px;
   }
-  .contact__email {
-    font-size: 28px;
+  .contact__links__memoji {
+    height: 49px;
   }
   .contact__links__link__linkedin {
     font-size: 49px;
@@ -711,6 +726,9 @@ body {
     font-size: 49px;
   }
   .contact__links__link__cv {
+    font-size: 49px;
+  }
+  .contact__links__link__email {
     font-size: 49px;
   }
 }
