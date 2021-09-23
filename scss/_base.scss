@@ -187,9 +187,9 @@
         }
         &__gallery {
             grid-template-columns: 1fr 1fr;
-            &__project {
-                width: 100%;
-            }
+            // &__project {
+            //     width: 100%;
+            // }
         }
     }
     .contact {

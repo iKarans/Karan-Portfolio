@@ -225,11 +225,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 95%;
+  margin: auto;
 }
 .portfolio__gallery__project {
   width: 216px;
-  align-self: center;
-  justify-self: center;
+  cursor: pointer;
 }
 
 .contact {
@@ -522,9 +523,6 @@ body {
   }
   .portfolio__gallery {
     grid-template-columns: 1fr 1fr;
-  }
-  .portfolio__gallery__project {
-    width: 100%;
   }
 
   .contact__heading {
