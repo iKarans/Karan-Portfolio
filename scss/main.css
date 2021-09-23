@@ -220,8 +220,14 @@ body {
 .portfolio__filter__java {
   cursor: pointer;
 }
+.portfolio__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .portfolio__gallery__project {
-  width: 75%;
+  width: 216px;
   align-self: center;
   justify-self: center;
 }
@@ -334,10 +340,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-gap: 30px;
-}
-.portfolio__gallery {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .contact {
@@ -623,12 +625,6 @@ body {
   }
   .portfolio__filter {
     font-size: 19px;
-  }
-  .portfolio__gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-  .portfolio__gallery__project {
-    width: 100%;
   }
 
   .contact__heading {

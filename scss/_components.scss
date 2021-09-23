@@ -236,8 +236,12 @@ body {
         }
     }
     &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         &__project {
-            width: 75%;
+            width: 216px;
             align-self: center;
             justify-self: center;
         }

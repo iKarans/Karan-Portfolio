@@ -295,12 +295,12 @@
         &__filter {
             font-size: 19px;
         }
-        &__gallery {
-            grid-template-columns: 1fr 1fr;
-            &__project {
-                width: 100%;
-            }
-        }
+        // &__gallery {
+        //     grid-template-columns: 1fr 1fr;
+        //     &__project {
+        //         width: 100%;
+        //     }
+        // }
     }
     .contact {
         &__heading {

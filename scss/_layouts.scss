@@ -43,10 +43,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-gap: 30px;
-    &__gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
 }
 
 .contact {
