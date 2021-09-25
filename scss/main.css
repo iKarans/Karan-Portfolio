@@ -113,6 +113,7 @@ body {
   border-radius: 25px;
   border: 0px;
   width: 100%;
+  cursor: pointer;
   outline: none;
   font-family: "Roboto", sans-serif;
   color: #FBF8FD;
