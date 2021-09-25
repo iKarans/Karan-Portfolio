@@ -176,7 +176,6 @@ body {
   font-size: 24px;
   align-self: center;
   justify-self: center;
-  grid-column: 1/4;
 }
 .about__skills i {
   font-size: 24px;
@@ -408,7 +407,7 @@ body {
 }
 .about__skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-gap: 20px;
 }
