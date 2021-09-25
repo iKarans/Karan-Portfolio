@@ -104,6 +104,7 @@ body {
 .lpage__link {
   justify-self: center;
   align-self: center;
+  width: 225px;
 }
 .lpage__link__btn {
   padding: 13px 0px;
@@ -111,7 +112,6 @@ body {
   border-radius: 25px;
   border: 0px;
   width: 100%;
-  width: 225px;
   outline: none;
   font-family: "Roboto", sans-serif;
   color: #FBF8FD;
@@ -226,14 +226,13 @@ body {
 }
 .portfolio__gallery {
   display: grid;
+  grid-auto-columns: 1fr;
   justify-items: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 .portfolio__gallery__flip {
-  width: 280px;
-  height: 175px;
+  width: 285px;
+  height: 180px;
   border: 3px solid #3B28CC;
   border-radius: 4px;
 }
@@ -257,7 +256,7 @@ body {
 .portfolio__gallery__flip__inner__back {
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 10px;
   position: absolute;
   transform: rotateY(180deg);
   backface-visibility: hidden;
@@ -418,16 +417,13 @@ body {
 .portfolio {
   min-height: 95vh;
   width: 90%;
-  margin: auto;
+  margin: 5vh auto 0px auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
   grid-gap: 30px;
 }
 
 .contact {
-  width: 90%;
-  margin: 0px auto 0px auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
@@ -448,7 +444,7 @@ body {
   .lpage__heading {
     font-size: 34px;
   }
-  .lpage__btn a {
+  .lpage__link__btn {
     font-size: 16px;
   }
 
@@ -485,6 +481,10 @@ body {
   }
   .portfolio__filter {
     font-size: 16px;
+  }
+  .portfolio__gallery__flip {
+    width: 300px;
+    height: 210px;
   }
 
   .contact__heading {
@@ -539,7 +539,7 @@ body {
     justify-self: start;
     text-align: left;
   }
-  .lpage__btn {
+  .lpage__link {
     grid-row: 2/3;
     grid-column: 1/2;
     align-self: start;
@@ -547,7 +547,7 @@ body {
     width: 180px;
     padding: 9px 0px;
   }
-  .lpage__btn a {
+  .lpage__btn {
     font-size: 16px;
   }
   .lpage__torch {
@@ -640,23 +640,12 @@ body {
   }
   .lpage__heading {
     font-size: 39px;
-    align-self: end;
-    justify-self: start;
-    text-align: left;
   }
-  .lpage__btn {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    align-self: start;
-    justify-self: start;
+  .lpage__link {
+    width: 215px;
   }
-  .lpage__btn a {
+  .lpage__link__btn {
     font-size: 18px;
-  }
-  .lpage__torch {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    height: 70%;
   }
 
   .about {
@@ -706,6 +695,21 @@ body {
   .portfolio__filter {
     font-size: 19px;
   }
+  .portfolio__gallery__flip__inner__back__heading {
+    font-size: 24px;
+  }
+  .portfolio__gallery__flip__inner__back__info {
+    font-size: 15px;
+  }
+  .portfolio__gallery__flip__inner__back__tools {
+    font-size: 22px;
+  }
+  .portfolio__gallery__flip__inner__back__link__rocket {
+    font-size: 24px;
+  }
+  .portfolio__gallery__flip__inner__back__link__code {
+    font-size: 24px;
+  }
 
   .contact__heading {
     font-size: 36px;
@@ -738,73 +742,159 @@ body {
   }
 
   .lpage__heading {
-    font-size: 60px;
+    font-size: 50px;
   }
-  .lpage__btn {
+  .lpage__link {
     padding: 16px 0px;
-    width: 320px;
+    width: 280px;
   }
-  .lpage__btn a {
-    font-size: 28px;
+  .lpage__link__btn {
+    font-size: 24px;
   }
 
   .about__heading {
-    font-size: 54px;
+    font-size: 45px;
   }
   .about__heading:after {
-    width: 223px;
+    width: 186px;
   }
   .about__about-me {
-    font-size: 28px;
+    font-size: 24px;
   }
   .about__stack__heading {
-    font-size: 49px;
+    font-size: 40px;
   }
   .about__stack i {
-    font-size: 49px;
+    font-size: 40px;
   }
   .about__skills__heading {
-    font-size: 49px;
+    font-size: 40px;
   }
   .about__skills i {
-    font-size: 49px;
+    font-size: 40px;
   }
   .about__arrows {
-    font-size: 49px;
+    font-size: 40px;
   }
 
   .portfolio__heading {
-    font-size: 54px;
+    font-size: 45px;
   }
   .portfolio__heading:after {
-    width: 288px;
+    width: 240px;
   }
   .portfolio__filter {
-    font-size: 28px;
+    font-size: 24px;
   }
   .portfolio__gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .portfolio__gallery__flip {
+    width: 280px;
+  }
 
   .contact__heading {
-    font-size: 54px;
+    font-size: 45px;
   }
   .contact__heading:after {
-    width: 273px;
+    width: 228px;
   }
   .contact__links__memoji {
-    height: 49px;
+    height: 40px;
   }
   .contact__links__link__linkedin {
-    font-size: 49px;
+    font-size: 40px;
   }
   .contact__links__link__github {
-    font-size: 49px;
+    font-size: 40px;
   }
   .contact__links__link__cv {
-    font-size: 49px;
+    font-size: 40px;
   }
   .contact__links__link__email {
-    font-size: 49px;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    font-size: 25px;
+  }
+  .header img {
+    height: 37px;
+  }
+
+  .lpage__heading {
+    font-size: 50px;
+  }
+  .lpage__link {
+    padding: 16px 0px;
+    width: 280px;
+  }
+  .lpage__link__btn {
+    font-size: 24px;
+  }
+
+  .about__heading {
+    font-size: 45px;
+  }
+  .about__heading:after {
+    width: 186px;
+  }
+  .about__about-me {
+    font-size: 24px;
+  }
+  .about__stack__heading {
+    font-size: 40px;
+  }
+  .about__stack i {
+    font-size: 40px;
+  }
+  .about__skills__heading {
+    font-size: 40px;
+  }
+  .about__skills i {
+    font-size: 40px;
+  }
+  .about__arrows {
+    font-size: 40px;
+  }
+
+  .portfolio__heading {
+    font-size: 45px;
+  }
+  .portfolio__heading:after {
+    width: 240px;
+  }
+  .portfolio__filter {
+    font-size: 24px;
+  }
+  .portfolio__gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .portfolio__gallery__flip {
+    width: 350px;
+    height: 230px;
+  }
+
+  .contact__heading {
+    font-size: 45px;
+  }
+  .contact__heading:after {
+    width: 228px;
+  }
+  .contact__links__memoji {
+    height: 40px;
+  }
+  .contact__links__link__linkedin {
+    font-size: 40px;
+  }
+  .contact__links__link__github {
+    font-size: 40px;
+  }
+  .contact__links__link__cv {
+    font-size: 40px;
+  }
+  .contact__links__link__email {
+    font-size: 40px;
   }
 }

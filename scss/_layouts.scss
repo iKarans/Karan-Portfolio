@@ -38,16 +38,13 @@
 .portfolio {
     min-height: 95vh;
     width: 90%;
-    margin: auto;
+    margin: 5vh auto 0px auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
     grid-gap: 30px;
 }
 
 .contact {
-    width: 90%;
-    margin: 0px auto 0px auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
