@@ -1,0 +1,54 @@
+.lpage {
+  min-height: 95vh;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-gap: 10px;
+}
+
+.about {
+  min-height: 95vh;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto 1fr 1fr auto;
+  grid-gap: 30px;
+}
+.about__stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.about__stack__h3 {
+  grid-column: 1/4;
+}
+.about__skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 20px;
+}
+.about__skills__h3 {
+  grid-column: 1/4;
+}
+
+.portfolio {
+  min-height: 95vh;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 30px;
+}
+
+.contact {
+  width: 90%;
+  margin: 0px auto 0px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 30px;
+}
