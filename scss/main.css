@@ -247,7 +247,6 @@ body {
   position: relative;
 }
 .portfolio__gallery__flip__inner__front {
-  background-color: orange;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -291,14 +290,21 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.portfolio__gallery__flip__inner__back__rocket {
-  font-size: 20px;
+.portfolio__gallery__flip__inner__back__link {
+  color: white;
+  text-decoration: none;
   justify-self: center;
 }
-.portfolio__gallery__flip__inner__back__code {
+.portfolio__gallery__flip__inner__back__link__rocket {
+  font-size: 20px;
+}
+.portfolio__gallery__flip__inner__back__link__code {
   grid-column: 2/3;
   font-size: 20px;
-  justify-self: center;
+}
+.portfolio__gallery__flip__inner__back__link:hover {
+  color: #3F8EFC;
+  transform: scale(1.2);
 }
 .portfolio__gallery__flip:hover .portfolio__gallery__flip__inner {
   transform: rotateY(180deg);

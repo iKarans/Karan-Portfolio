@@ -259,7 +259,6 @@ body {
                 transform-style: preserve-3d;
                 position: relative;
                 &__front {
-                    background-color: orange;
                     width: 100%;
                     height: 100%;
                     position: absolute;
@@ -302,14 +301,22 @@ body {
                         display: flex;
                         justify-content: space-between;
                     }
-                    &__rocket {
-                        font-size: 20px;
+                    &__link {
+                        color: white;
+                        text-decoration: none;
                         justify-self: center;
+                        &__rocket {
+                            font-size: 20px;
+                        }
+                        &__code {
+                            grid-column: 2 / 3;
+                            font-size: 20px;
+                            
+                        }
                     }
-                    &__code {
-                        grid-column: 2 / 3;
-                        font-size: 20px;
-                        justify-self: center;
+                    &__link:hover {
+                        color: #3F8EFC;
+                        transform: scale(1.2);
                     }
                 }
             }
