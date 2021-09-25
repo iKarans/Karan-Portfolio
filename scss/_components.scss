@@ -243,12 +243,9 @@ body {
         justify-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
-        
-        width: 90%;
-        margin: auto;
         grid-gap: 10px;
         &__flip {
-            width: 300px;
+            width: 280px;
             height: 175px;
             border: 3px solid #3B28CC;
             border-radius: 4px;
