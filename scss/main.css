@@ -177,10 +177,14 @@ body {
   align-self: center;
   justify-self: center;
 }
-.about__skills i {
-  font-size: 24px;
+.about__skills p {
+  font-size: 10px;
   align-self: center;
-  justify-self: center;
+  display: flex;
+  align-items: center;
+}
+.about__skills p i {
+  font-size: 24px;
 }
 .about__arrows {
   align-self: center;
