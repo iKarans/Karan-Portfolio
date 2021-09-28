@@ -264,6 +264,7 @@ body {
                     width: 100%;
                     height: 100%;
                     position: absolute;
+                    -webkit-backface-visibility: hidden;
                     backface-visibility: hidden;
                     img {
                         width: 100%;
@@ -281,6 +282,7 @@ body {
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: auto auto auto auto;
                     grid-gap: 10px;
+                    -webkit-backface-visibility: hidden;
                     &__heading {
                         grid-column: 1 / 3;
                         justify-self: center;
