@@ -122,8 +122,8 @@ body {
 .lpage__torch {
   justify-self: center;
   align-self: center;
+  height: 310px;
   margin-top: 30px;
-  height: 80%;
 }
 
 .about__heading {
@@ -390,7 +390,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 15px;
   justify-content: center;
   align-content: center;
 }
