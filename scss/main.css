@@ -177,13 +177,14 @@ body {
   align-self: center;
   justify-self: center;
 }
-.about__skills p {
-  font-size: 10px;
-  align-self: center;
+.about__skills div {
   display: flex;
-  align-items: center;
 }
-.about__skills p i {
+.about__skills div p {
+  font-size: 14px;
+  margin-left: 30px;
+}
+.about__skills div i {
   font-size: 24px;
 }
 .about__arrows {
@@ -412,11 +413,7 @@ body {
 .about__skills {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
   grid-gap: 20px;
-}
-.about__skills__h3 {
-  grid-column: 1/4;
 }
 
 .portfolio {

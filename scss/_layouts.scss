@@ -27,11 +27,7 @@
     &__skills {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
         grid-gap: 20px;
-        &__h3 {
-            grid-column: 1 / 4;
-        }
     }
 }
 
