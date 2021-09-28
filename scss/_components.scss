@@ -99,16 +99,15 @@ body {
         text-align: center;
         font-family: "Inter", sans-serif;
         font-size: 29px;
-        margin-top: 6vh;
         &__span1 {
             color: #2667FF;
         }
         &__karan {
             color: #3F8EFC;
         }
-        &__memoji {
-            height: 35px;
-        }
+        // &__memoji {
+        //     height: 35px;
+        // }
     }
     &__link{
         justify-self: center;
@@ -190,6 +189,7 @@ body {
         }
         div {
             display: flex;
+            align-items: center;
             p {
                 font-size: 14px;
                 margin-left: 30px;

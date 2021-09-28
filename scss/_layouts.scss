@@ -3,8 +3,11 @@
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
 }
 
 .about {
