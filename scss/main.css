@@ -175,7 +175,7 @@ body {
   border: 5px solid #2667FF;
   border-radius: 50px;
   padding: 20px;
-  height: 350px;
+  height: 400px;
 }
 .about__stack__heading {
   font-size: 24px;
@@ -192,6 +192,7 @@ body {
   border: 5px solid #2667FF;
   border-radius: 50px;
   padding: 20px;
+  height: 400px;
 }
 .about__skills__heading {
   font-size: 24px;
@@ -202,7 +203,7 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 20px;
-  align-content: center;
+  align-items: center;
 }
 .about__skills__logo-container__text {
   font-size: 14px;
@@ -210,11 +211,26 @@ body {
 .about__skills__logo-container__logo {
   font-size: 24px;
 }
+.about__skills__logo-container__mobile {
+  justify-self: center;
+}
 .about__arrows {
   align-self: center;
   justify-self: center;
   font-size: 24px;
   color: #3B28CC;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
 }
 
 .portfolio__heading {
@@ -344,6 +360,14 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+.portfolio__arrows {
+  align-self: center;
+  justify-self: center;
+  font-size: 24px;
+  color: #3B28CC;
+  animation: bounce 2s infinite;
+  margin-bottom: 5vh;
+}
 
 .contact {
   background-color: #272a2f;
@@ -425,7 +449,6 @@ body {
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-rows: auto auto 1fr 1fr auto;
   grid-gap: 30px;
 }
 .about__stack {
@@ -520,6 +543,9 @@ body {
   .portfolio__gallery__flip {
     height: 200px;
   }
+  .portfolio__arrows {
+    font-size: 28px;
+  }
 
   .contact__heading {
     font-size: 31px;
@@ -608,6 +634,7 @@ body {
   }
   .about__stack {
     grid-column: 1/2;
+    height: 500px;
   }
   .about__stack__heading {
     font-size: 26px;
@@ -617,6 +644,7 @@ body {
   }
   .about__skills {
     grid-column: 2/3;
+    height: 500px;
   }
   .about__skills__heading {
     font-size: 26px;
@@ -643,6 +671,9 @@ body {
   }
   .portfolio__gallery {
     grid-template-columns: 1fr 1fr;
+  }
+  .portfolio__arrows {
+    font-size: 26px;
   }
 
   .contact__heading {
@@ -760,6 +791,9 @@ body {
   .portfolio__gallery__flip__inner__back__link__code {
     font-size: 24px;
   }
+  .portfolio__arrows {
+    font-size: 32px;
+  }
 
   .contact__heading {
     font-size: 36px;
@@ -854,6 +888,9 @@ body {
   .portfolio__gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .portfolio__arrows {
+    font-size: 40px;
+  }
 
   .contact__heading {
     font-size: 45px;
@@ -914,11 +951,17 @@ body {
   .about__about-me {
     font-size: 29px;
   }
+  .about__stack {
+    height: 550px;
+  }
   .about__stack__heading {
     font-size: 49px;
   }
   .about__stack__logo {
     font-size: 49px;
+  }
+  .about__skills {
+    height: 550px;
   }
   .about__skills__heading {
     font-size: 49px;
@@ -947,6 +990,9 @@ body {
   }
   .portfolio__gallery__flip {
     height: 260px;
+  }
+  .portfolio__arrows {
+    font-size: 49px;
   }
 
   .contact__heading {

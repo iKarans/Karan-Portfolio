@@ -72,6 +72,9 @@
                 height: 200px
             }
         }
+        &__arrows {
+            font-size: 28px;
+        }
     }
     .contact {
         &__heading {
@@ -166,6 +169,7 @@
         }
         &__stack {
             grid-column: 1 / 2;
+            height: 500px;
             &__heading {
                 font-size: 26px;
             }
@@ -175,6 +179,7 @@
         }
         &__skills {
             grid-column: 2 / 3;
+            height: 500px;
             &__heading {
                 font-size: 26px;
             }
@@ -204,6 +209,9 @@
         }
         &__gallery {
             grid-template-columns: 1fr 1fr;
+        }
+        &__arrows {
+            font-size: 26px;
         }
     }
     .contact {
@@ -340,6 +348,9 @@
                 }
             }
         }
+        &__arrows {
+            font-size: 32px;
+        }
     }
     .contact {
         &__heading {
@@ -451,6 +462,9 @@
         &__gallery {
             grid-template-columns: 1fr 1fr 1fr;
         }
+        &__arrows {
+            font-size: 40px;
+        }
     }
     .contact {
         &__heading {
@@ -522,6 +536,7 @@
             font-size: 29px;
         }
         &__stack {
+            height: 550px;
             &__heading {
                 font-size: 49px;
             }
@@ -530,6 +545,7 @@
             }
         }
         &__skills {
+            height: 550px;
             &__heading {
                 font-size: 49px;
             }
@@ -562,6 +578,9 @@
                 height: 260px;
             }
         }
+        &__arrows {
+            font-size: 49px;
+        }
     }
     .contact {
         &__heading {
@@ -592,84 +611,3 @@
     }
 }
 
-// @media screen and (min-width: 1440px) {
-//     .header {
-//         font-size: 39px;
-//     }
-//     .lpage {
-//         &__heading {
-//             font-size: 86px;
-//         }
-//         &__btn {
-//             font-size: 28px;
-//             padding: 25px 0px;
-//             width: 500px;
-//         }
-//     }
-//     .about {
-//         &__h2 {
-//             font-size:78px;
-//         }
-//         &__h2:after {
-//             width: 322px;
-//         }
-//         &__p {
-//             font-size: 42px;
-//         }
-//         &__stack {
-//             &__h3 {
-//                 font-size: 70px;
-//             }
-//             i {
-//                 font-size: 70px;
-//             }
-//         }
-//         &__skills {
-//             &__h3 {
-//                 font-size: 70px;
-//             }
-//             i {
-//                 font-size: 70px;
-//             }
-//         }
-//         &__arrows {
-//             font-size: 70px;
-//         }
-//     }
-//     .portfolio {
-//         &__h2 {
-//             font-size:78px;
-//         }
-//         &__h2:after {
-//             width: 416px;
-//         }
-//         &__ul {
-//             font-size: 42px;
-//         }
-//         &__gallery {
-//             grid-template-columns: 1fr 1fr 1fr;
-//         }
-//     }
-//     .contact {
-//         &__h2 {
-//             font-size: 78px;
-//         }
-//         &__h2:after {
-//             width: 394px;
-//         }
-//         &__p {
-//             font-size: 42px;
-//         }
-//         &__links {
-//             &__i1 {
-//                 font-size: 70px;
-//             }
-//             &__i2 {
-//                 font-size: 70px;
-//             }
-//             &__i3 {
-//                 font-size: 70px;
-//             }
-//         }
-//     }
-// }
