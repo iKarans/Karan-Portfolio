@@ -11,7 +11,7 @@
 }
 
 .about {
-    min-height: 95vh;
+    // min-height: 95vh;
     width: 90%;
     margin: auto;
     display: grid;
@@ -20,7 +20,7 @@
     &__stack {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
         &__h3 {
             grid-column: 1 / 4;
@@ -30,12 +30,13 @@
     &__skills {
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
     }
 }
 
 .portfolio {
-    min-height: 95vh;
+    // min-height: 95vh;
     width: 90%;
     margin: 5vh auto 0px auto;
     display: grid;

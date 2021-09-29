@@ -133,8 +133,28 @@ body {
     &__torch {
         justify-self: center;
         align-self: center;
-        height: 310px;
+        height: 250px;
         margin-top: 30px;
+    }
+    &__quote {
+        display: none;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+        &__left-quote {
+            font-size: 32px;
+            color: #3B28CC
+        }
+        &__right-quote {
+            grid-column: 3 / 4;
+            font-size: 32px;
+            color: #3B28CC
+        }
+        &__text {
+            grid-column: 2 / 3;
+            font-size: 18px;
+            text-align: center;
+        }
     }
 }
 
@@ -188,11 +208,13 @@ body {
             justify-self: center;
         }
         div {
-            display: flex;
-            align-items: center;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 20px;
+            align-content: center;
             p {
                 font-size: 14px;
-                margin-left: 30px;
+                margin-left: 20px;
             }
             i {
                 font-size: 24px;
