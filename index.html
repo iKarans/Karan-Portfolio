@@ -12,37 +12,37 @@
 </head>
 <body>
     <header class="header">
-        <img src="assets/header.png" alt="memoji">
+        <img src="assets/header.png" alt="memoji" class="header__memoji">
         <nav class="header__nav">
             <ul class="header__nav__ul">
-                <li class="header__nav__ul__li"><a href="#Home">Home</a></li>
-                <li class="header__nav__ul__li"><a href="#About">About</a></li>
-                <li class="header__nav__ul__li"><a href="#Portfolio">Portfolio</a></li>
-                <li class="header__nav__ul__li"><a href="#Contact">Contact/CV</a></li>
+                <li class="header__nav__ul__li"><a href="#Home" class="header__nav__ul__li__a">Home</a></li>
+                <li class="header__nav__ul__li"><a href="#About" class="header__nav__ul__li__a">About</a></li>
+                <li class="header__nav__ul__li"><a href="#Portfolio" class="header__nav__ul__li__a">Portfolio</a></li>
+                <li class="header__nav__ul__li"><a href="#Contact" class="header__nav__ul__li__a">Contact/CV</a></li>
             </ul>
         </nav>
         <nav class="header__tablet-nav">
             <ul class="header__tablet-nav__ul">
-                <li class="header__tablet-nav__ul__li"><a href="#Home">Home</a></li>
-                <li class="header__tablet-nav__ul__li"><a href="#About">About</a></li>
-                <li class="header__tablet-nav__ul__li"><a href="#Portfolio">Portfolio</a></li>
-                <li class="header__tablet-nav__ul__li"><a href="#Contact">Contact</a></li>
+                <li class="header__tablet-nav__ul__li"><a href="#Home" class="header__tablet-nav__ul__li__a">Home</a></li>
+                <li class="header__tablet-nav__ul__li"><a href="#About" class="header__tablet-nav__ul__li__a">About</a></li>
+                <li class="header__tablet-nav__ul__li"><a href="#Portfolio" class="header__tablet-nav__ul__li__a">Portfolio</a></li>
+                <li class="header__tablet-nav__ul__li"><a href="#Contact" class="header__tablet-nav__ul__li__a">Contact</a></li>
             </ul>
         </nav>
         <div class="header__socials">
-            <a href="https://www.linkedin.com/in/karan-sivalingam/" class="header__socials__linkedin"><i class="fab fa-linkedin-in header__socials__a__i header__socials__i1"></i></a>
-            <a href="https://github.com/iKarans" class="header__socials__github"><i class="fab fa-github header__socials__a__i header__socials__i2"></i></a>
-            <a href="#" class="header__socials__cv"><i class="far fa-file-pdf header__socials__a__i header__socials__i3"></i></a>
+            <a href="https://www.linkedin.com/in/karan-sivalingam/" class="header__socials__linkedin"><i class="fab fa-linkedin-in header__socials__linkedin__logo"></i></a>
+            <a href="https://github.com/iKarans" class="header__socials__github"><i class="fab fa-github header__socials__github__logo"></i></a>
+            <a href="#" class="header__socials__cv"><i class="far fa-file-pdf header__socials__cv__logo"></i></a>
         </div>
     </header>
     <section class="lpage" id="Home">
         <h1 class="lpage__heading">
             <span id="typewriterText" class="lpage__heading__hey">Hey.</span><br>
-            I'm <span class="lpage__heading__span1">&lt;</span><span class="lpage__heading__karan">Karan</span><span class="lpage__heading__span1">&gt;</span>.<br>
+            I'm <span class="lpage__heading__semicolon">&lt;</span><span class="lpage__heading__karan">Karan</span><span class="lpage__heading__semicolon">&gt;</span>.<br>
             Software Developer.
         </h1>
-        <a href="#About" class="lpage__link"><button class="lpage__link__btn">Let's Explore</button></a>
-        <img src="assets/IMG_BBE90BB326B8-1 2.png" alt="laptop" class="lpage__torch">
+        <a href="#About" class="lpage__explore"><button class="lpage__explore__btn">Let's Explore</button></a>
+        <img src="assets/IMG_BBE90BB326B8-1 2.png" alt="laptop" class="lpage__memoji">
         <div class="lpage__quote">
             <i class="fas fa-quote-left lpage__quote__left-quote"></i>
             <i class="fas fa-quote-right lpage__quote__right-quote"></i>
@@ -54,41 +54,45 @@
             About.()
         </h2>
         <p class="about__about-me">
-            I am a Mathematics with Economics graduate from the London School of Economics who fell down the rabbit hole of programming and software when I was introduced to the programming language R.<br /><br />
-
+            I am a Mathematics with Economics graduate from the London School of Economics who fell down the rabbit hole of programming and software when I was introduced to the programming language R.
+        </p>
+        <p class="about__about-me">
             The endless learning potential combined with the ability to work on projects that have a meaningful impact on people’s lives consolidated my decision to pursue a career in this field.
+        </p>
+        <p class="about__about-me">
+            I am passionate about open-source projects and I am hoping to add my own contributions one day!
         </p>
         <div class="about__stack">
             <h3 class="about__stack__heading">Stack</h3>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-sass"></i>
-            <i class="fab fa-js-square"></i>
-            <i class="fab fa-git"></i>
-            <i class="fab fa-github-alt"></i>
-            <i class="fab fa-react"></i>
-            <i class="fab fa-npm"></i>
-            <i class="fab fa-java"></i>
-            <i class="fas fa-database"></i>
-            <i class="fab fa-r-project"></i>
-            <i class="fab fa-python"></i>
+            <i class="fab fa-html5 about__stack__logo"></i>
+            <i class="fab fa-css3-alt about__stack__logo"></i>
+            <i class="fab fa-sass about__stack__logo"></i>
+            <i class="fab fa-js-square about__stack__logo"></i>
+            <i class="fab fa-git about__stack__logo"></i>
+            <i class="fab fa-github-alt about__stack__logo"></i>
+            <i class="fab fa-react about__stack__logo"></i>
+            <i class="fab fa-npm about__stack__logo"></i>
+            <i class="fab fa-java about__stack__logo"></i>
+            <i class="fas fa-database about__stack__logo"></i>
+            <i class="fab fa-r-project about__stack__logo"></i>
+            <i class="fab fa-python about__stack__logo"></i>
         </div>
         <div class="about__skills">
             <h3 class="about__skills__heading">Skills</h3>
-            <!-- <div>
-                <i class="fas fa-mobile-alt"></i><p>Mobile first / Responsive Development</p>
-                <i class="fas fa-bug"></i><p>Debugging</p>
-                <i class="fas fa-people-arrows"></i><p>Pair Programming</p>
-                <i class="far fa-object-group"></i><p>Object Oriented Programming</p>
-                <i class="fas fa-code"></i><p>Minimal & Efficient Code</p>
-                <i class="fas fa-user-check"></i><p>Test Driven Development</p>
-            </div> -->
-            <div><i class="fas fa-mobile-alt"></i><p>Mobile first / Responsive Development</p></div>
-            <div><i class="fas fa-bug"></i><p>Debugging</p></div>
-            <div><i class="fas fa-people-arrows"></i><p>Pair Programming</p></div>
-            <div><i class="far fa-object-group"></i><p>Object Oriented Programming</p></div>
-            <div><i class="fas fa-code"></i><p>Minimal & Efficient Code</p></div>
-            <div><i class="fas fa-user-check"></i><p>Test Driven Development</p></div>      
+            <div class="about__skills__logo-container">
+                <i class="fas fa-mobile-alt about__skills__logo-container__logo"></i>
+                <p class="about__skills__logo-container__text">Mobile first / Responsive Development</p>
+                <i class="fas fa-bug about__skills__logo-container__logo"></i>
+                <p class="about__skills__logo-container__text">Debugging</p>
+                <i class="fas fa-people-arrows about__skills__logo-container__logo"></i>
+                <p class="about__skills__logo-container__text">Pair Programming</p>
+                <i class="far fa-object-group about__skills__logo-container__logo"></i>
+                <p class="about__skills__logo-container__text">Object Oriented Programming</p>
+                <i class="fas fa-code about__skills__logo-container__logo"></i>
+                <p class="about__skills__logo-container__text">Minimal & Efficient Code</p>
+                <i class="fas fa-user-check about__skills__logo-container__logo"></i>
+                <p class="about__skills__logo-container__text">Test Driven Development</p>
+            </div>
         </div>
         <i class="fas fa-angle-double-down about__arrows"></i>
     </section>
@@ -106,7 +110,7 @@
             <div class="portfolio__gallery__flip">
                 <div class="portfolio__gallery__flip__inner">
                     <div class="portfolio__gallery__flip__inner__front">
-                        <img src="assets/iPortfolio.png" alt="project">
+                        <img src="assets/iPortfolio.png" alt="project" class="portfolio__gallery__flip__inner__front__project-img">
                     </div>
                     <div class="portfolio__gallery__flip__inner__back">
                         <h4 class="portfolio__gallery__flip__inner__back__heading">Portfolio</h4>
@@ -124,7 +128,7 @@
             <div class="portfolio__gallery__flip">
                 <div class="portfolio__gallery__flip__inner">
                     <div class="portfolio__gallery__flip__inner__front">
-                        <img src="assets/iCalculator.png" alt="project">
+                        <img src="assets/iCalculator.png" alt="project" class="portfolio__gallery__flip__inner__front__project-img">
                     </div>
                     <div class="portfolio__gallery__flip__inner__back">
                         <h4 class="portfolio__gallery__flip__inner__back__heading">Calculator</h4>
@@ -142,7 +146,7 @@
             <div class="portfolio__gallery__flip">
                 <div class="portfolio__gallery__flip__inner">
                     <div class="portfolio__gallery__flip__inner__front">
-                        <img src="assets/iMorse.png" alt="project">
+                        <img src="assets/iMorse.png" alt="project" class="portfolio__gallery__flip__inner__front__project-img">
                     </div>
                     <div class="portfolio__gallery__flip__inner__back">
                         <h4 class="portfolio__gallery__flip__inner__back__heading">Morse Translator</h4>
@@ -160,7 +164,7 @@
             <div class="portfolio__gallery__flip">
                 <div class="portfolio__gallery__flip__inner">
                     <div class="portfolio__gallery__flip__inner__front">
-                        <img src="assets/Rectangle 9.png" alt="project">
+                        <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__flip__inner__front__project-img">
                     </div>
                     <div class="portfolio__gallery__flip__inner__back">
                         <h4 class="portfolio__gallery__flip__inner__back__heading">Morse Translator</h4>
@@ -178,7 +182,7 @@
             <div class="portfolio__gallery__flip">
                 <div class="portfolio__gallery__flip__inner">
                     <div class="portfolio__gallery__flip__inner__front">
-                        <img src="assets/Rectangle 9.png" alt="project">
+                        <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__flip__inner__front__project-img">
                     </div>
                     <div class="portfolio__gallery__flip__inner__back">
                         <h4 class="portfolio__gallery__flip__inner__back__heading">Morse Translator</h4>
@@ -196,7 +200,7 @@
             <div class="portfolio__gallery__flip">
                 <div class="portfolio__gallery__flip__inner">
                     <div class="portfolio__gallery__flip__inner__front">
-                        <img src="assets/Rectangle 9.png" alt="project">
+                        <img src="assets/Rectangle 9.png" alt="project" class="portfolio__gallery__flip__inner__front__project-img">
                     </div>
                     <div class="portfolio__gallery__flip__inner__back">
                         <h4 class="portfolio__gallery__flip__inner__back__heading">Morse Translator</h4>

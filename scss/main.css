@@ -19,7 +19,7 @@ body {
   z-index: 9999;
   background-color: rgba(31, 32, 38, 0.9);
 }
-.header img {
+.header__memoji {
   height: 27px;
 }
 .header__nav {
@@ -31,11 +31,11 @@ body {
   justify-content: space-around;
   list-style: none;
 }
-.header__nav__ul__li a {
+.header__nav__ul__li__a {
   color: white;
   text-decoration: none;
 }
-.header__nav__ul__li a:hover {
+.header__nav__ul__li__a:hover {
   color: #3F8EFC;
 }
 .header__tablet-nav {
@@ -49,11 +49,11 @@ body {
   justify-content: space-around;
   list-style: none;
 }
-.header__tablet-nav__ul__li a {
+.header__tablet-nav__ul__li__a {
   text-decoration: none;
   color: white;
 }
-.header__tablet-nav__ul__li a:hover {
+.header__tablet-nav__ul__li__a:hover {
   color: #3F8EFC;
 }
 .header__socials {
@@ -92,7 +92,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 29px;
 }
-.lpage__heading__span1 {
+.lpage__heading__semicolon {
   color: #2667FF;
 }
 .lpage__heading__karan {
@@ -100,13 +100,14 @@ body {
 }
 .lpage__heading__hey {
   border-right: solid white 4px;
+  margin-bottom: 5px;
 }
-.lpage__link {
+.lpage__explore {
   justify-self: center;
   align-self: center;
   width: 225px;
 }
-.lpage__link__btn {
+.lpage__explore__btn {
   padding: 13px 0px;
   background-color: #3F8EFC;
   border-radius: 25px;
@@ -119,10 +120,10 @@ body {
   text-align: center;
   font-size: 14px;
 }
-.lpage__link__btn:hover {
+.lpage__explore__btn:hover {
   background-color: #2667FF;
 }
-.lpage__torch {
+.lpage__memoji {
   justify-self: center;
   align-self: center;
   height: 250px;
@@ -174,6 +175,7 @@ body {
   border: 5px solid #2667FF;
   border-radius: 50px;
   padding: 20px;
+  height: 350px;
 }
 .about__stack__heading {
   font-size: 24px;
@@ -181,7 +183,7 @@ body {
   justify-self: center;
   grid-column: 1/4;
 }
-.about__stack i {
+.about__stack__logo {
   font-size: 24px;
   align-self: center;
   justify-self: center;
@@ -196,17 +198,16 @@ body {
   align-self: center;
   justify-self: center;
 }
-.about__skills div {
+.about__skills__logo-container {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 20px;
   align-content: center;
 }
-.about__skills div p {
+.about__skills__logo-container__text {
   font-size: 14px;
-  margin-left: 20px;
 }
-.about__skills div i {
+.about__skills__logo-container__logo {
   font-size: 24px;
 }
 .about__arrows {
@@ -278,7 +279,7 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.portfolio__gallery__flip__inner__front img {
+.portfolio__gallery__flip__inner__front__project-img {
   width: 100%;
   height: 100%;
 }
@@ -432,6 +433,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
 }
 .about__stack__h3 {
   grid-column: 1/4;
@@ -439,8 +442,9 @@ body {
 .about__skills {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-gap: 20px;
+  align-items: center;
 }
 
 .portfolio {
@@ -472,7 +476,7 @@ body {
   .lpage__heading {
     font-size: 34px;
   }
-  .lpage__link__btn {
+  .lpage__explore__btn {
     font-size: 16px;
   }
 
@@ -488,16 +492,16 @@ body {
   .about__stack__heading {
     font-size: 28px;
   }
-  .about__stack i {
+  .about__stack__logo {
     font-size: 28px;
   }
   .about__skills__heading {
     font-size: 28px;
   }
-  .about__skills div i {
+  .about__skills__logo-container__logo {
     font-size: 28px;
   }
-  .about__skills div p {
+  .about__skills__logo-container__text {
     font-size: 16px;
   }
   .about__arrows {
@@ -552,10 +556,10 @@ body {
   .header__socials {
     display: flex;
   }
-  .header__socials__social1 {
+  .header__socials__linkedin {
     margin-right: 30px;
   }
-  .header__socials__social2 {
+  .header__socials__github {
     margin-right: 30px;
   }
 
@@ -569,7 +573,7 @@ body {
     justify-self: start;
     text-align: left;
   }
-  .lpage__link {
+  .lpage__explore {
     grid-row: 2/3;
     grid-column: 1/2;
     align-self: start;
@@ -577,19 +581,19 @@ body {
     width: 180px;
     padding: 9px 0px;
   }
-  .lpage__btn {
+  .lpage__explore__btn {
     font-size: 16px;
   }
-  .lpage__torch {
+  .lpage__memoji {
     grid-column: 2/3;
     grid-row: 1/3;
     align-self: center;
     margin-top: 0px;
+    height: 180px;
   }
 
   .about {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
   }
   .about__heading {
     grid-column: 1/3;
@@ -608,7 +612,7 @@ body {
   .about__stack__heading {
     font-size: 26px;
   }
-  .about__stack i {
+  .about__stack__logo {
     font-size: 26px;
   }
   .about__skills {
@@ -617,10 +621,10 @@ body {
   .about__skills__heading {
     font-size: 26px;
   }
-  .about__skills div i {
+  .about__skills__logo-container__logo {
     font-size: 26px;
   }
-  .about__skills div p {
+  .about__skills__logo-container__text {
     font-size: 16px;
   }
   .about__arrows {
@@ -664,22 +668,23 @@ body {
   .header {
     font-size: 18px;
   }
-  .header img {
+  .header__memoji {
     height: 34px;
   }
 
   .lpage__heading {
     font-size: 37px;
   }
-  .lpage__link {
+  .lpage__explore {
     width: 215px;
   }
-  .lpage__link__btn {
+  .lpage__explore__btn {
     font-size: 18px;
   }
-  .lpage__torch {
+  .lpage__memoji {
     grid-column: 2/3;
     grid-row: 2/3;
+    height: 250px;
   }
   .lpage__quote {
     display: grid;
@@ -693,7 +698,6 @@ body {
 
   .about {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
   }
   .about__heading {
     grid-column: 1/3;
@@ -712,7 +716,7 @@ body {
   .about__stack__heading {
     font-size: 32px;
   }
-  .about__stack i {
+  .about__stack__logo {
     font-size: 32px;
   }
   .about__skills {
@@ -721,10 +725,10 @@ body {
   .about__skills__heading {
     font-size: 32px;
   }
-  .about__skills div i {
+  .about__skills__logo-container__logo {
     font-size: 32px;
   }
-  .about__skills div p {
+  .about__skills__logo-container__text {
     font-size: 19px;
   }
   .about__arrows {
@@ -783,22 +787,21 @@ body {
   .header {
     font-size: 25px;
   }
-  .header img {
+  .header__memoji {
     height: 37px;
   }
 
   .lpage__heading {
     font-size: 50px;
   }
-  .lpage__link {
-    padding: 16px 0px;
+  .lpage__explore {
     width: 280px;
   }
-  .lpage__link__btn {
+  .lpage__explore__btn {
     font-size: 24px;
     padding: 16px 0px;
   }
-  .lpage__torch {
+  .lpage__memoji {
     height: 350px;
   }
   .lpage__quote__text {
@@ -823,16 +826,16 @@ body {
   .about__stack__heading {
     font-size: 40px;
   }
-  .about__stack i {
+  .about__stack__logo {
     font-size: 40px;
   }
   .about__skills__heading {
     font-size: 40px;
   }
-  .about__skills div i {
+  .about__skills__logo-container__logo {
     font-size: 40px;
   }
-  .about__skills div p {
+  .about__skills__logo-container__text {
     font-size: 24px;
   }
   .about__arrows {
@@ -851,6 +854,7 @@ body {
   .portfolio__gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .contact__heading {
     font-size: 45px;
   }
@@ -877,25 +881,25 @@ body {
   .header {
     font-size: 25px;
   }
-  .header img {
+  .header__memoji {
     height: 37px;
   }
 
   .lpage__heading {
     font-size: 60px;
   }
-  .lpage__link {
-    padding: 17px 0px;
+  .lpage__explore {
     width: 320px;
   }
-  .lpage__link__btn {
+  .lpage__explore__btn {
     font-size: 29px;
+    padding: 17px 0px;
   }
   .lpage__quote__text {
     font-size: 29px;
   }
   .lpage__quote__left-quote {
-    font-size: 51px;
+    font-size: 49px;
   }
   .lpage__quote__right-quote {
     font-size: 49px;
@@ -913,16 +917,16 @@ body {
   .about__stack__heading {
     font-size: 49px;
   }
-  .about__stack i {
+  .about__stack__logo {
     font-size: 49px;
   }
   .about__skills__heading {
     font-size: 49px;
   }
-  .about__skills div i {
+  .about__skills__logo-container__logo {
     font-size: 49px;
   }
-  .about__skills div p {
+  .about__skills__logo-container__text {
     font-size: 29px;
   }
   .about__arrows {
