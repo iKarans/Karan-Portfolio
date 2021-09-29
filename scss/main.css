@@ -98,6 +98,9 @@ body {
 .lpage__heading__karan {
   color: #3F8EFC;
 }
+.lpage__heading__hey {
+  border-right: solid white 4px;
+}
 .lpage__link {
   justify-self: center;
   align-self: center;
