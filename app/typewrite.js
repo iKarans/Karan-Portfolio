@@ -4,7 +4,7 @@ let i = 0;
 let j = 0;
 let wordArray = [];
 
-function typewrite () {
+export const typewrite = () => {
     typewriterText.innerText = wordArray.join("");
     if(i < greetings.length) {
         if(j < greetings[i].length) {
@@ -20,4 +20,3 @@ function typewrite () {
     }
     setTimeout(typewrite, 500);
 }
-typewrite();
