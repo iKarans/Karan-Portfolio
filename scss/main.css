@@ -100,7 +100,6 @@ body {
 }
 .lpage__heading__hey {
   border-right: solid white 4px;
-  margin-bottom: 5px;
 }
 .lpage__explore {
   justify-self: center;
@@ -489,6 +488,10 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 375px) {
