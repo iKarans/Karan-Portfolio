@@ -18,10 +18,8 @@ allFilter.addEventListener("click", (e) => {
     filterBtns.forEach((btn) => {
         if(btn.innerText == currentFilter) {
             btn.style.backgroundColor = "#2667FF";
-            btn.style.padding = "5px;"
         } else {
             btn.style.backgroundColor = "transparent";
-            btn.style.padding = "0px;"
         }
     });
 });

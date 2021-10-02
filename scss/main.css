@@ -257,12 +257,15 @@ body {
   cursor: pointer;
 }
 .portfolio__filter__javascript {
+  padding: 5px;
   cursor: pointer;
 }
 .portfolio__filter__react {
+  padding: 5px;
   cursor: pointer;
 }
 .portfolio__filter__java {
+  padding: 5px;
   cursor: pointer;
 }
 .portfolio__gallery {
