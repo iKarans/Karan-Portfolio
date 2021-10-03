@@ -453,6 +453,7 @@ body {
   grid-gap: 20px;
   align-items: center;
   justify-items: center;
+  justify-content: center;
 }
 .about__stack__h3 {
   grid-column: 1/4;
@@ -463,6 +464,7 @@ body {
   grid-template-rows: auto 1fr;
   grid-gap: 20px;
   align-items: center;
+  justify-content: center;
 }
 
 .portfolio {
