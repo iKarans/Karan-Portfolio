@@ -36,21 +36,45 @@ javascriptFilter.addEventListener("click", () => {
     filterBtns.forEach((btn) => {
         if(btn.innerText == currentFilter) {
             btn.style.backgroundColor = "#2667FF";
-            btn.style.padding = "5px;"
         } else {
             btn.style.backgroundColor = "transparent";
-            btn.style.padding = "0px;"
         }
     });
 });
 
 
 reactFilter.addEventListener("click", () => {
-    console.log(3);
+    flipCards.forEach((card) => {
+        currentFilter = reactFilter.innerText;
+        card.classList.remove("portfolio__gallery__flip__hide-flip");
+        if(card.dataset.lang != "react.js") {
+            card.classList.add("portfolio__gallery__flip__hide-flip");
+        }
+    });
+    filterBtns.forEach((btn) => {
+        if(btn.innerText == currentFilter) {
+            btn.style.backgroundColor = "#2667FF";
+        } else {
+            btn.style.backgroundColor = "transparent";
+        }
+    });
 });
 
 javaFilter.addEventListener("click", () => {
-    console.log(4);
+    flipCards.forEach((card) => {
+        currentFilter = javaFilter.innerText;
+        card.classList.remove("portfolio__gallery__flip__hide-flip");
+        if(card.dataset.lang != "java") {
+            card.classList.add("portfolio__gallery__flip__hide-flip");
+        }
+    });
+    filterBtns.forEach((btn) => {
+        if(btn.innerText == currentFilter) {
+            btn.style.backgroundColor = "#2667FF";
+        } else {
+            btn.style.backgroundColor = "transparent";
+        }
+    });
 });
 
 typewrite();
