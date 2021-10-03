@@ -1,3 +1,13 @@
-@use "./components";
+@use "./components/page";
+@use "./components/navigation";
+@use "./components/landing";
+@use "./components/about";
+@use "./components/portfolio";
+@use "./components/contact";
 @use "./layouts";
+@use "./media-queries/mobile-m";
+@use "./media-queries/mobile-s-hori";
+@use "./media-queries/tablet";
+@use "./media-queries/laptop";
+@use "./media-queries/laptop-l";
 @use "./base";

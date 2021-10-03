@@ -1,0 +1,84 @@
+.header {
+    min-height: 5vh;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding-top: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: rgb(31, 32, 38, 0.9);
+    &__memoji {
+        height: 27px;
+    }
+    &__nav {
+        flex: 1;
+        &__ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            list-style: none;
+            &__li{
+                &__a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        color: #3F8EFC;
+                    }
+                }
+            }
+        }
+    }
+
+    &__tablet-nav {
+        display: none;
+        align-items: center;
+        flex: 7;
+        &__ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            &__li {
+                &__a {
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        color: #3F8EFC;
+                    }
+                }
+            }
+        }
+    }
+
+    &__socials {
+        display: none;
+        justify-content: space-between;
+        flex: 1;
+        &__linkedin {
+            color: white;
+        }
+        &__github {
+            color: white;
+        }
+        &__cv {
+            color: white;
+        }
+        &__linkedin:hover {
+            color: #3F8EFC;
+            cursor: pointer;
+        }
+        &__github:hover {
+            color: #3F8EFC;
+            cursor: pointer;
+        }
+        &__cv:hover {
+            color: #3F8EFC;
+            cursor: pointer;
+        }
+    }
+}

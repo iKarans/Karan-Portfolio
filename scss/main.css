@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1f2026;
   color: #FBF8FD;
@@ -216,17 +220,6 @@ body {
   font-size: 24px;
   color: #3B28CC;
   animation: bounce 2s infinite;
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-25px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
 }
 
 .portfolio__heading {
@@ -485,16 +478,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 30px;
-}
-
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 375px) {
@@ -782,6 +765,9 @@ html {
   .portfolio__filter {
     font-size: 19px;
   }
+  .portfolio__gallery__flip {
+    height: 225px;
+  }
   .portfolio__gallery__flip__inner__back__heading {
     font-size: 24px;
   }
@@ -1021,5 +1007,22 @@ html {
   }
   .contact__links__link__email {
     font-size: 49px;
+  }
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-10px);
   }
 }

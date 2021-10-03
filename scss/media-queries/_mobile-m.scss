@@ -1,0 +1,101 @@
+@media screen and (min-width: 375px) {
+    .header {
+        font-size: 17px;
+    }
+    .lpage {
+        &__heading {
+            font-size: 34px;
+        }
+        &__explore {
+            &__btn {
+                font-size: 16px;
+            }
+        }
+    }
+    .about {
+        &__heading {
+            font-size: 31px;
+        }
+
+
+        &__heading:after {
+            width: 128px;
+        }
+
+        &__about-me {
+            font-size: 16px;
+        }
+        &__stack {
+            &__heading {
+                font-size:28px;
+            }
+            &__logo {
+                font-size: 28px;
+            }
+        }
+        &__skills {
+            &__heading {
+                font-size:28px;
+            }
+            &__logo-container {
+                &__logo {
+                    font-size: 28px;
+                }
+                &__text {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__arrows {
+            font-size: 28px;
+        }
+
+    }
+    .portfolio {
+        &__heading {
+            font-size: 31px;
+        }
+        &__heading:after {
+            width: 166px;
+        }
+        &__filter {
+            font-size: 16px;
+        }
+        &__gallery {
+            &__flip {
+                height: 200px
+            }
+        }
+        &__arrows {
+            font-size: 28px;
+        }
+    }
+    .contact {
+        &__heading {
+            font-size: 31px;
+        }
+        &__heading:after {
+            width: 157px;
+        }
+        &__links {
+            &__memoji {
+                height: 29px;
+            }
+            &__link{
+                &__linkedin {
+                    font-size: 28px;
+                }
+                &__github {
+                    font-size: 28px;
+                }
+                &__cv {
+                    font-size: 28px;
+                }
+                &__email {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+

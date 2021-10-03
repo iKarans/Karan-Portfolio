@@ -1,0 +1,65 @@
+.contact {
+    background-color: #272a2f;
+    &__heading {
+        margin-top: 5vh;
+        align-self: center;
+        justify-self: center;
+        font-family: "Inter", sans-serif;
+    }
+    &__heading:after {
+        display: block;
+        height: 3px;
+        width: 122px;
+        background-color: #3F8EFC;
+        content: "";
+        margin: 10px auto 0px auto;
+    }
+    &__links {
+        justify-self: center;
+        align-self: center;
+        &__memoji {
+            cursor: pointer;
+            font-size: 25px;
+            margin-right: 30px;
+            color: #2667FF;
+        }
+        &__memoji:hover {
+            transform: scale(1.25);
+        }
+        &__link{
+            &__linkedin {
+                cursor: pointer;
+                font-size: 25px;
+                margin-right: 30px;
+                color: #2667FF;
+            }
+            &__github {
+                cursor: pointer;
+                font-size: 25px;
+                margin-right: 30px;
+                color: #2667FF;;
+            }
+            &__cv {
+                cursor: pointer;
+                font-size: 25px;
+                margin-right: 30px;
+                color: #2667FF;;
+            }
+            &__email {
+                cursor: pointer;
+                font-size: 25px;
+                color: #2667FF;;
+            }
+            &__linkedin:hover, &__github:hover, &__cv:hover, &__email:hover {
+                color: white;
+                transform: scale(1.25);
+            }
+        }
+    }
+    &__legal {
+        color: #3B28CC;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 5vh;
+    }
+}

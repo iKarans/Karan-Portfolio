@@ -1,0 +1,115 @@
+@media screen and (min-width: 1280px) {
+    .header {
+        font-size: 25px;
+        &__memoji {
+            height: 37px;
+        }
+    }
+    .lpage {
+        &__heading {
+            font-size: 60px;
+        }
+        &__explore {
+            width: 320px;
+            &__btn {
+                font-size: 29px;
+                padding: 17px 0px;
+            }
+        }
+        &__quote {
+            &__text {
+                font-size: 29px;
+            }
+            &__left-quote {
+                font-size: 49px;
+            }
+            &__right-quote {
+                font-size: 49px;
+            }
+        }
+    }
+    .about {
+        &__heading {
+            font-size: 54px;
+        }
+        &__heading:after {
+            width: 223px;
+        }
+        &__about-me {
+            font-size: 29px;
+        }
+        &__stack {
+            height: 550px;
+            &__heading {
+                font-size: 49px;
+            }
+            &__logo {
+                font-size: 49px;
+            }
+        }
+        &__skills {
+            height: 550px;
+            &__heading {
+                font-size: 49px;
+            }
+            &__logo-container {
+                &__logo {
+                    font-size: 49px;
+                }
+                &__text {
+                    font-size: 29px;
+                }
+            }
+        }
+        &__arrows {
+            font-size: 49px;
+        }
+    }
+    .portfolio {
+        &__heading {
+            font-size: 54px;
+        }
+        &__heading:after {
+            width: 288px;
+        }
+        &__filter {
+            font-size: 29px;
+        }
+        &__gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+            &__flip {
+                height: 260px;
+            }
+        }
+        &__arrows {
+            font-size: 49px;
+        }
+    }
+    .contact {
+        &__heading {
+            font-size: 54px;
+        }
+        &__heading:after {
+            width: 273px;
+        }
+        &__links {
+            &__memoji {
+                height: 49px;
+            }
+            &__link {
+                &__linkedin {
+                    font-size: 49px;
+                }
+                &__github {
+                    font-size: 49px;
+                }
+                &__cv {
+                    font-size: 49px;
+                }
+                &__email {
+                    font-size: 49px;
+                }
+            }
+        }
+    }
+}
