@@ -6,6 +6,7 @@ body {
   background-color: #1f2026;
   color: #FBF8FD;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header {
