@@ -6,7 +6,6 @@ body {
   background-color: #1f2026;
   color: #FBF8FD;
   font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .header {
@@ -828,7 +827,7 @@ body {
   }
   .lpage__explore__btn {
     font-size: 24px;
-    padding: 16px 0px;
+    padding: 15px 0px;
   }
   .lpage__memoji {
     height: 350px;
@@ -925,7 +924,7 @@ body {
   }
   .lpage__explore__btn {
     font-size: 29px;
-    padding: 17px 0px;
+    padding: 15px 0px;
   }
   .lpage__quote__text {
     font-size: 29px;
