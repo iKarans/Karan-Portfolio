@@ -19,12 +19,14 @@
             grid-column: 2/3;
             grid-row: 2/3;
             height: 250px;
+            align-self: start;
         }
         &__quote {
             display: grid;
             grid-row: 1 / 2;
             grid-column: 2 / 3;
-            align-self: center;
+            align-self: end;
+            margin-bottom: 30px;
             &__text {
                 font-size: 18px
             }
