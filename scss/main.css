@@ -463,8 +463,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   grid-gap: 20px;
-  align-items: center;
-  justify-content: center;
 }
 
 .portfolio {
