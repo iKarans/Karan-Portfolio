@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  min-height: 5vh;
+  min-height: 50px;
   width: 95%;
   margin: auto;
   display: flex;
@@ -154,7 +154,7 @@ body {
 }
 
 .about__heading {
-  padding-top: 10vh;
+  padding-top: 75px;
   font-size: 27px;
   align-self: center;
   justify-self: center;
@@ -224,7 +224,7 @@ body {
 }
 
 .portfolio__heading {
-  padding-top: 10vh;
+  padding-top: 75px;
   font-size: 27px;
   align-self: center;
   justify-self: center;
@@ -369,7 +369,7 @@ body {
   background-color: #272a2f;
 }
 .contact__heading {
-  margin-top: 5vh;
+  margin-top: 75px;
   align-self: center;
   justify-self: center;
   font-family: "Inter", sans-serif;
@@ -426,7 +426,7 @@ body {
   color: #3B28CC;
   justify-self: center;
   align-self: center;
-  margin-bottom: 5vh;
+  margin-bottom: 75px;
 }
 
 .lpage {
