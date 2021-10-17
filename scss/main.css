@@ -385,14 +385,21 @@ body {
 .contact__links {
   justify-self: center;
   align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact__links__memoji {
   cursor: pointer;
   height: 25px;
   margin-right: 30px;
-  color: #2667FF;
+  color: inherit;
+  text-decoration: inherit;
 }
-.contact__links__memoji:hover {
+.contact__links__memoji img {
+  height: 25px;
+}
+.contact__links__memoji img:hover {
   transform: scale(1.25);
 }
 .contact__links__link__linkedin {
@@ -544,6 +551,9 @@ body {
     width: 157px;
   }
   .contact__links__memoji {
+    height: 29px;
+  }
+  .contact__links__memoji img {
     height: 29px;
   }
   .contact__links__link__linkedin {
@@ -799,6 +809,9 @@ body {
   .contact__links__memoji {
     height: 32px;
   }
+  .contact__links__memoji img {
+    height: 32px;
+  }
   .contact__links__link__linkedin {
     font-size: 32px;
   }
@@ -894,6 +907,9 @@ body {
     width: 228px;
   }
   .contact__links__memoji {
+    height: 40px;
+  }
+  .contact__links__memoji img {
     height: 40px;
   }
   .contact__links__link__linkedin {
@@ -997,6 +1013,9 @@ body {
     width: 273px;
   }
   .contact__links__memoji {
+    height: 49px;
+  }
+  .contact__links__memoji img {
     height: 49px;
   }
   .contact__links__link__linkedin {

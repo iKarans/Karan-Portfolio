@@ -17,14 +17,21 @@
     &__links {
         justify-self: center;
         align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &__memoji {
             cursor: pointer;
             height: 25px;
             margin-right: 30px;
-            color: #2667FF;
-        }
-        &__memoji:hover {
-            transform: scale(1.25);
+            color: inherit;
+            text-decoration: inherit;
+            img {
+                height: 25px;
+            }
+            img:hover {
+                transform: scale(1.25);
+            }
         }
         &__link{
             &__linkedin {

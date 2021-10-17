@@ -124,6 +124,9 @@
         &__links {
             &__memoji {
                 height: 32px;
+                img {
+                    height: 32px;
+                }
             }
             &__link {
                 &__linkedin {
