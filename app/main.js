@@ -4,6 +4,7 @@ const allFilter = document.querySelector(".portfolio__filter__all");
 const javascriptFilter = document.querySelector(".portfolio__filter__javascript");
 const reactFilter = document.querySelector(".portfolio__filter__react");
 const javaFilter = document.querySelector(".portfolio__filter__java");
+const cppFilter = document.querySelector(".portfolio__filter__cpp");
 const flipCards = document.querySelectorAll(".portfolio__gallery__flip");
 const filterBtns = document.querySelectorAll(".portfolio__filter__btn");
 
@@ -11,7 +12,6 @@ let currentFilter;
 
 allFilter.addEventListener("click", (e) => {
     currentFilter = allFilter.innerText;
-    console.log(currentFilter);
     flipCards.forEach((card) => {
         card.classList.remove("portfolio__gallery__flip__hide-flip");
     });
@@ -77,4 +77,20 @@ javaFilter.addEventListener("click", () => {
     });
 });
 
+cppFilter.addEventListener("click", () => {
+    flipCards.forEach((card) => {
+        currentFilter = "C++";
+        card.classList.remove("portfolio__gallery__flip__hide-flip");
+        if(card.dataset.lang != "cpp") {
+            card.classList.add("portfolio__gallery__flip__hide-flip");
+        }
+    });
+    filterBtns.forEach((btn) => {
+        if(btn.innerText == currentFilter) {
+            btn.style.backgroundColor = "#2667FF";
+        } else {
+            btn.style.backgroundColor = "transparent";
+        }
+    });
+});
 typewrite();
