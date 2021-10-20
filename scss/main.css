@@ -274,7 +274,7 @@ body {
 }
 .portfolio__gallery__flip {
   width: 100%;
-  height: 180px;
+  height: 200px;
   border: 3px solid #3B28CC;
   border-radius: 4px;
 }
@@ -302,14 +302,15 @@ body {
 .portfolio__gallery__flip__inner__back {
   width: 100%;
   height: 100%;
-  padding: 10px;
   position: absolute;
   transform: rotateY(180deg);
   backface-visibility: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-gap: 10px;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 5px;
   -webkit-backface-visibility: hidden;
 }
 .portfolio__gallery__flip__inner__back__heading {
@@ -798,7 +799,10 @@ body {
     font-size: 19px;
   }
   .portfolio__gallery__flip {
-    height: 225px;
+    height: 250px;
+  }
+  .portfolio__gallery__flip__inner__back {
+    grid-gap: 20px;
   }
   .portfolio__gallery__flip__inner__back__heading {
     font-size: 24px;
