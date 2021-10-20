@@ -312,6 +312,7 @@ body {
   align-content: center;
   grid-gap: 5px;
   -webkit-backface-visibility: hidden;
+  padding: 0px 5px 0 5px;
 }
 .portfolio__gallery__flip__inner__back__heading {
   grid-column: 1/3;
