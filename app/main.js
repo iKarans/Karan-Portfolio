@@ -45,9 +45,9 @@ javascriptFilter.addEventListener("click", () => {
 
 reactFilter.addEventListener("click", () => {
     flipCards.forEach((card) => {
-        currentFilter = reactFilter.innerText;
+        currentFilter = "React.JS";
         card.classList.remove("portfolio__gallery__flip__hide-flip");
-        if(card.dataset.lang != "react.js") {
+        if(card.dataset.lang != "react") {
             card.classList.add("portfolio__gallery__flip__hide-flip");
         }
     });
