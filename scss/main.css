@@ -340,7 +340,8 @@ body {
   flex-direction: row;
   align-items: center;
 }
-.portfolio__gallery__flip__inner__back__tools__logos i {
+.portfolio__gallery__flip__inner__back__tools__logos img {
+  height: 20px;
   margin-left: 20px;
 }
 .portfolio__gallery__flip__inner__back__tools__logos .fa-plus {
