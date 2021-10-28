@@ -19,5 +19,8 @@
   "homepage": "https://github.com/iKarans/KaranP#readme",
   "devDependencies": {
     "sass": "^1.41.1"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }

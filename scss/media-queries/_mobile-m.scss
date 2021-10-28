@@ -3,12 +3,14 @@
         font-size: 17px;
     }
     .lpage {
-        &__heading {
-            font-size: 34px;
-        }
-        &__explore {
-            &__btn {
-                font-size: 16px;
+        &__container {
+            &__heading {
+                font-size: 34px;
+            }
+            &__explore {
+                &__btn {
+                    font-size: 16px;
+                }
             }
         }
     }
