@@ -11,7 +11,7 @@
       "value": ["#ce679b","#f05830","#027dc5","#f58232","#fcca3f", "#00d8ff"]
     },
     "shape": {
-      "type": "circle",
+      "type": ["circle", "star", "triangle", "polygon"],
       "stroke": {
         "width": 0,
         "color": "#b6b2b2"
@@ -38,7 +38,7 @@
       }
     },
     "line_linked": {
-      "enable": true,
+      "enable": false,
       "distance": 150,
       "color": "#c8c8c8",
       "opacity": 0.4,
