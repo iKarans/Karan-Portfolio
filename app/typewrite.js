@@ -1,6 +1,6 @@
 const typewriterText = document.querySelector("#typewriterText");
-const greetings = ["Hello.", "こにちは。", "வணக்கம்.", 
-"안녕하세요.", "Hola.", "Hallo.", "Ciao.", "你好。", "أهلا."]; 
+const greetings = ["Hello.", "Kon'nichiwa.", "Vaṇakkam.", 
+"annyeonghasibnikka", "Hola.", "Hallo.", "Ciao.", "Nǐ hǎo.", "'ahlan.", "namaste"]; 
 let i = 0;
 let j = 0;
 let wordArray = [];
