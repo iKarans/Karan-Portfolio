@@ -744,13 +744,14 @@ body {
     grid-row: 2/3;
     height: 250px;
     align-self: start;
+    margin-top: 10px;
   }
   .lpage__container__quote {
     display: grid;
     grid-row: 1/2;
     grid-column: 2/3;
     align-self: end;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .lpage__container__quote__text {
     font-size: 18px;
