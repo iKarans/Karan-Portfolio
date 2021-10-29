@@ -2,14 +2,12 @@
     min-height: 95vh;
     width: 90%;
     margin: auto;
-    &__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        grid-gap: 15px;
-        justify-content: center;
-        align-content: center;
-    }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: center;
 }
 
 .about {

@@ -6,29 +6,26 @@
         }
     }
     .lpage {
-        &__container {
-            &__heading {
-                font-size: 60px;
+        &__heading {
+            font-size: 60px;
+        }
+        &__explore {
+            width: 320px;
+            &__btn {
+                font-size: 29px;
+                padding: 15px 0px;
             }
-            &__explore {
-                width: 320px;
-                &__btn {
-                    font-size: 29px;
-                    padding: 15px 0px;
-                }
+        }
+        &__quote {
+            &__text {
+                font-size: 29px;
             }
-            &__quote {
-                &__text {
-                    font-size: 29px;
-                }
-                &__left-quote {
-                    font-size: 49px;
-                }
-                &__right-quote {
-                    font-size: 49px;
-                }
+            &__left-quote {
+                font-size: 49px;
             }
-
+            &__right-quote {
+                font-size: 49px;
+            }
         }
     }
     .about {

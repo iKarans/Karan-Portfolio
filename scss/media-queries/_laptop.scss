@@ -6,30 +6,28 @@
         }
     }
     .lpage {
-        &__container {
-            &__heading {
-                font-size: 50px;
+        &__heading {
+            font-size: 50px;
+        }
+        &__explore {
+            width: 280px;
+            &__btn {
+                font-size: 24px;
+                padding: 15px 0px;
             }
-            &__explore {
-                width: 280px;
-                &__btn {
-                    font-size: 24px;
-                    padding: 15px 0px;
-                }
+        }
+        &__memoji {
+            height: 350px;
+        }
+        &__quote {
+            &__text {
+                font-size: 24px;
             }
-            &__memoji {
-                height: 350px;
+            &__left-quote {
+                font-size: 40px;
             }
-            &__quote {
-                &__text {
-                    font-size: 24px;
-                }
-                &__left-quote {
-                    font-size: 40px;
-                }
-                &__right-quote {
-                    font-size: 40px;
-                }
+            &__right-quote {
+                font-size: 40px;
             }
         }
     }
