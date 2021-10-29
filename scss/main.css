@@ -10,7 +10,8 @@ body {
 
 .header {
   height: 50px;
-  width: 95%;
+  width: 100%;
+  padding: 0px 5% 0px 5%;
   margin: auto;
   display: flex;
   align-items: center;
