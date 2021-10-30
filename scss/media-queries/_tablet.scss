@@ -96,7 +96,10 @@
                             font-size: 15px;
                         }
                         &__tools {
-                            font-size: 22px;
+                            font-size: 15px;
+                            &__logos {
+                                font-size: 15px;
+                            }
                         }
                         &__link {
                             &__rocket {

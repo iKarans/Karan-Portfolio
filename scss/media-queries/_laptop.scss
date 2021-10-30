@@ -78,6 +78,32 @@
         }
         &__gallery {
             grid-template-columns: 1fr 1fr 1fr;
+            &__flip {
+                &__inner {
+                    &__back {
+                        &__heading {
+                            font-size: 29px;
+                        }
+                        &__info {
+                            font-size: 18px;
+                        }
+                        &__tools {
+                            font-size: 18px;
+                            &__logos {
+                                font-size: 18px;
+                            }
+                        }
+                        &__link {
+                            &__rocket {
+                                font-size: 29px;
+                            }
+                            &__code {
+                                font-size: 29px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         &__arrows {
             font-size: 40px;

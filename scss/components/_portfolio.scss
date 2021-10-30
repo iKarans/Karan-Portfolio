@@ -103,31 +103,29 @@
                         width: 100%;
                         margin: auto;
                         grid-column: 1 / 3;
-                        font-size: 18px;
+                        font-size: 13px;
                         display: flex;
                         justify-content: center;
                         &__logos {
                             display: flex;
                             flex-direction: row;
                             align-items: center;
-                            font-size: 18px;
-                            margin-left: 20px;
+                            font-size: 13px;
+                            margin-left: 10px;
                         }
                     }
                     &__link {
                         color: white;
                         text-decoration: none;
                         justify-self: center;
-                        &__cpp {
-                            grid-column: 1 / 3;
-                        }
                         &__rocket {
                             font-size: 20px;
                         }
                         &__code {
-                            grid-column: 2 / 3;
-                            font-size: 20px;
-                            
+                            font-size: 20px;   
+                        }
+                        &__cpp {
+                            grid-column: 1 / -1;
                         }
                     }
                     &__link:hover {
