@@ -1,102 +1,113 @@
 import { typewrite } from "./typewrite.js";
 
 const allFilter = document.querySelector(".portfolio__filter__all");
-const javascriptFilter = document.querySelector(".portfolio__filter__javascript");
+const javascriptFilter = document.querySelector(
+  ".portfolio__filter__javascript"
+);
 const reactFilter = document.querySelector(".portfolio__filter__react");
 const javaFilter = document.querySelector(".portfolio__filter__java");
 const cppFilter = document.querySelector(".portfolio__filter__cpp");
 const flipCards = document.querySelectorAll(".portfolio__gallery__flip");
 const filterBtns = document.querySelectorAll(".portfolio__filter__btn");
+const quoteText = document.querySelector(".lpage__quote__text");
 
 let currentFilter;
 
 allFilter.addEventListener("click", (e) => {
-    currentFilter = allFilter.innerText;
-    flipCards.forEach((card) => {
-        card.classList.remove("portfolio__gallery__flip__hide-flip");
-    });
-    filterBtns.forEach((btn) => {
-        if(btn.innerText == currentFilter) {
-            btn.style.backgroundColor = "#2667FF";
-        } else {
-            btn.style.backgroundColor = "transparent";
-        }
-    });
+  currentFilter = allFilter.innerText;
+  flipCards.forEach((card) => {
+    card.classList.remove("portfolio__gallery__flip__hide-flip");
+  });
+  filterBtns.forEach((btn) => {
+    if (btn.innerText == currentFilter) {
+      btn.style.backgroundColor = "#2667FF";
+    } else {
+      btn.style.backgroundColor = "transparent";
+    }
+  });
 });
 
 javascriptFilter.addEventListener("click", () => {
-    flipCards.forEach((card) => {
-        currentFilter = javascriptFilter.innerText;
-        console.log(currentFilter);
-        card.classList.remove("portfolio__gallery__flip__hide-flip");
-        if(card.dataset.lang != "javascript") {
-            card.classList.add("portfolio__gallery__flip__hide-flip");
-        }
-    });
-    filterBtns.forEach((btn) => {
-        if(btn.innerText == currentFilter) {
-            btn.style.backgroundColor = "#2667FF";
-        } else {
-            btn.style.backgroundColor = "transparent";
-        }
-    });
+  flipCards.forEach((card) => {
+    currentFilter = javascriptFilter.innerText;
+    console.log(currentFilter);
+    card.classList.remove("portfolio__gallery__flip__hide-flip");
+    if (card.dataset.lang != "javascript") {
+      card.classList.add("portfolio__gallery__flip__hide-flip");
+    }
+  });
+  filterBtns.forEach((btn) => {
+    if (btn.innerText == currentFilter) {
+      btn.style.backgroundColor = "#2667FF";
+    } else {
+      btn.style.backgroundColor = "transparent";
+    }
+  });
 });
 
-
 reactFilter.addEventListener("click", () => {
-    flipCards.forEach((card) => {
-        currentFilter = "React.JS";
-        card.classList.remove("portfolio__gallery__flip__hide-flip");
-        if(card.dataset.lang != "react") {
-            card.classList.add("portfolio__gallery__flip__hide-flip");
-        }
-    });
-    filterBtns.forEach((btn) => {
-        if(btn.innerText == currentFilter) {
-            btn.style.backgroundColor = "#2667FF";
-        } else {
-            btn.style.backgroundColor = "transparent";
-        }
-    });
+  flipCards.forEach((card) => {
+    currentFilter = "React.JS";
+    card.classList.remove("portfolio__gallery__flip__hide-flip");
+    if (card.dataset.lang != "react") {
+      card.classList.add("portfolio__gallery__flip__hide-flip");
+    }
+  });
+  filterBtns.forEach((btn) => {
+    if (btn.innerText == currentFilter) {
+      btn.style.backgroundColor = "#2667FF";
+    } else {
+      btn.style.backgroundColor = "transparent";
+    }
+  });
 });
 
 javaFilter.addEventListener("click", () => {
-    flipCards.forEach((card) => {
-        currentFilter = javaFilter.innerText;
-        card.classList.remove("portfolio__gallery__flip__hide-flip");
-        if(card.dataset.lang != "java") {
-            card.classList.add("portfolio__gallery__flip__hide-flip");
-        }
-    });
-    filterBtns.forEach((btn) => {
-        if(btn.innerText == currentFilter) {
-            btn.style.backgroundColor = "#2667FF";
-        } else {
-            btn.style.backgroundColor = "transparent";
-        }
-    });
+  flipCards.forEach((card) => {
+    currentFilter = javaFilter.innerText;
+    card.classList.remove("portfolio__gallery__flip__hide-flip");
+    if (card.dataset.lang != "java") {
+      card.classList.add("portfolio__gallery__flip__hide-flip");
+    }
+  });
+  filterBtns.forEach((btn) => {
+    if (btn.innerText == currentFilter) {
+      btn.style.backgroundColor = "#2667FF";
+    } else {
+      btn.style.backgroundColor = "transparent";
+    }
+  });
 });
 
 cppFilter.addEventListener("click", () => {
-    flipCards.forEach((card) => {
-        currentFilter = "C++";
-        card.classList.remove("portfolio__gallery__flip__hide-flip");
-        if(card.dataset.lang != "cpp") {
-            card.classList.add("portfolio__gallery__flip__hide-flip");
-        }
-    });
-    filterBtns.forEach((btn) => {
-        if(btn.innerText == currentFilter) {
-            btn.style.backgroundColor = "#2667FF";
-        } else {
-            btn.style.backgroundColor = "transparent";
-        }
-    });
+  flipCards.forEach((card) => {
+    currentFilter = "C++";
+    card.classList.remove("portfolio__gallery__flip__hide-flip");
+    if (card.dataset.lang != "cpp") {
+      card.classList.add("portfolio__gallery__flip__hide-flip");
+    }
+  });
+  filterBtns.forEach((btn) => {
+    if (btn.innerText == currentFilter) {
+      btn.style.backgroundColor = "#2667FF";
+    } else {
+      btn.style.backgroundColor = "transparent";
+    }
+  });
 });
 typewrite();
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', './particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-  
+particlesJS.load("particles-js", "./particles.json", function () {
+  console.log("callback - particles.js config loaded");
+});
+
+// API
+
+fetch("http://localhost:8080/quotes").then(response => {
+    return response.json();
+}
+).then(response => {
+    // quoteText.innerText=response[2].quote;
+    console.log(response);
+})

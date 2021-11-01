@@ -11,7 +11,7 @@
       "value": ["#ce679b","#f05830","#027dc5","#f58232","#fcca3f", "#00d8ff"]
     },
     "shape": {
-      "type": ["circle", "star", "triangle", "polygon"],
+      "type": ["circle", "star", "triangle", "square", "polygon"],
       "stroke": {
         "width": 0,
         "color": "#b6b2b2"
