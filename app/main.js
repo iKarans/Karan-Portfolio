@@ -1,3 +1,4 @@
+import { quote } from "./api.js";
 import { typewrite } from "./typewrite.js";
 
 const allFilter = document.querySelector(".portfolio__filter__all");
@@ -9,8 +10,6 @@ const javaFilter = document.querySelector(".portfolio__filter__java");
 const cppFilter = document.querySelector(".portfolio__filter__cpp");
 const flipCards = document.querySelectorAll(".portfolio__gallery__flip");
 const filterBtns = document.querySelectorAll(".portfolio__filter__btn");
-const quoteText = document.querySelector(".lpage__quote__text");
-
 let currentFilter;
 
 allFilter.addEventListener("click", (e) => {
@@ -96,18 +95,9 @@ cppFilter.addEventListener("click", () => {
   });
 });
 typewrite();
+quote();
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load("particles-js", "./particles.json", function () {
   console.log("callback - particles.js config loaded");
 });
-
-// API
-
-fetch("http://localhost:8080/quotes").then(response => {
-    return response.json();
-}
-).then(response => {
-    // quoteText.innerText=response[2].quote;
-    console.log(response);
-})
