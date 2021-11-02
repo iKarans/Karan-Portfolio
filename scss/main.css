@@ -356,7 +356,7 @@ body {
 .portfolio__gallery__flip__inner__back__link__code {
   font-size: 20px;
 }
-.portfolio__gallery__flip__inner__back__link__cpp {
+.portfolio__gallery__flip__inner__back__link__single {
   grid-column: 1/-1;
 }
 .portfolio__gallery__flip__inner__back__link:hover {
