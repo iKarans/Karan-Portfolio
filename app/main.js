@@ -29,9 +29,8 @@ allFilter.addEventListener("click", (e) => {
 javascriptFilter.addEventListener("click", () => {
   flipCards.forEach((card) => {
     currentFilter = javascriptFilter.innerText;
-    console.log(currentFilter);
     card.classList.remove("portfolio__gallery__flip__hide-flip");
-    if (card.dataset.lang != "javascript") {
+    if (!card.dataset.lang.split(" ").includes("javascript")) {
       card.classList.add("portfolio__gallery__flip__hide-flip");
     }
   });
@@ -48,7 +47,7 @@ reactFilter.addEventListener("click", () => {
   flipCards.forEach((card) => {
     currentFilter = "React.JS";
     card.classList.remove("portfolio__gallery__flip__hide-flip");
-    if (card.dataset.lang != "react") {
+    if (!card.dataset.lang.split(" ").includes("react")) {
       card.classList.add("portfolio__gallery__flip__hide-flip");
     }
   });
@@ -65,7 +64,7 @@ javaFilter.addEventListener("click", () => {
   flipCards.forEach((card) => {
     currentFilter = javaFilter.innerText;
     card.classList.remove("portfolio__gallery__flip__hide-flip");
-    if (card.dataset.lang != "java") {
+    if (!card.dataset.lang.split(" ").includes("java")) {
       card.classList.add("portfolio__gallery__flip__hide-flip");
     }
   });
@@ -82,7 +81,7 @@ cppFilter.addEventListener("click", () => {
   flipCards.forEach((card) => {
     currentFilter = "C++";
     card.classList.remove("portfolio__gallery__flip__hide-flip");
-    if (card.dataset.lang != "cpp") {
+    if (!card.dataset.lang.split(" ").includes("cpp")) {
       card.classList.add("portfolio__gallery__flip__hide-flip");
     }
   });
