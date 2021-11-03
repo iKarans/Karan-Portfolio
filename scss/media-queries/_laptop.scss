@@ -19,15 +19,18 @@
         &__memoji {
             height: 350px;
         }
-        &__quote {
-            &__text {
-                font-size: 24px;
-            }
-            &__left-quote {
-                font-size: 40px;
-            }
-            &__right-quote {
-                font-size: 40px;
+        &__quote-container {
+            min-height: 180px;
+            &__quote {
+                &__text {
+                    font-size: 24px;
+                }
+                &__left-quote {
+                    font-size: 40px;
+                }
+                &__right-quote {
+                    font-size: 40px;
+                }
             }
         }
     }
@@ -47,6 +50,9 @@
             }
             &__logo {
                 font-size: 40px;
+                &__tooltip {
+                    font-size: 24px;
+                }
             }
         }
         &__skills {

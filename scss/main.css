@@ -134,23 +134,26 @@ body {
   height: 250px;
   animation: slide-in-right 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.lpage__quote {
+.lpage__quote-container {
   display: none;
+}
+.lpage__quote-container__quote {
+  display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto auto;
   grid-gap: 20px;
   animation: slide-in-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.lpage__quote__left-quote {
+.lpage__quote-container__quote__left-quote {
   font-size: 32px;
   color: #3F8EFC;
 }
-.lpage__quote__right-quote {
+.lpage__quote-container__quote__right-quote {
   grid-column: 3/4;
   font-size: 32px;
   color: #3F8EFC;
 }
-.lpage__quote__text {
+.lpage__quote-container__quote__text {
   grid-column: 2/3;
   font-size: 18px;
   text-align: center;
@@ -193,6 +196,37 @@ body {
   font-size: 24px;
   align-self: center;
   justify-self: center;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.about__stack__logo:hover span {
+  visibility: visible;
+}
+.about__stack__logo__tooltip {
+  visibility: hidden;
+  background-color: #1f2026;
+  color: #fff;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  width: 80px;
+  top: 100%;
+  left: 50%;
+  margin-left: -40px;
+  font-size: 14px;
+}
+.about__stack__logo__tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1f2026 transparent transparent transparent;
 }
 .about__skills {
   border: 5px solid #3F8EFC;
@@ -532,6 +566,9 @@ body {
   .about__stack__logo {
     font-size: 28px;
   }
+  .about__stack__logo__tooltip {
+    font-size: 16px;
+  }
   .about__skills__heading {
     font-size: 28px;
   }
@@ -735,14 +772,15 @@ body {
     height: 250px;
     align-self: start;
   }
-  .lpage__quote {
-    display: grid;
+  .lpage__quote-container {
+    display: flex;
+    align-items: flex-start;
+    min-height: 135px;
     grid-row: 1/2;
     grid-column: 2/3;
     align-self: end;
-    margin-bottom: 25px;
   }
-  .lpage__quote__text {
+  .lpage__quote-container__quote__text {
     font-size: 18px;
   }
 
@@ -768,6 +806,9 @@ body {
   }
   .about__stack__logo {
     font-size: 32px;
+  }
+  .about__stack__logo__tooltip {
+    font-size: 19px;
   }
   .about__skills {
     grid-column: 2/3;
@@ -869,13 +910,16 @@ body {
   .lpage__memoji {
     height: 350px;
   }
-  .lpage__quote__text {
+  .lpage__quote-container {
+    min-height: 180px;
+  }
+  .lpage__quote-container__quote__text {
     font-size: 24px;
   }
-  .lpage__quote__left-quote {
+  .lpage__quote-container__quote__left-quote {
     font-size: 40px;
   }
-  .lpage__quote__right-quote {
+  .lpage__quote-container__quote__right-quote {
     font-size: 40px;
   }
 
@@ -893,6 +937,9 @@ body {
   }
   .about__stack__logo {
     font-size: 40px;
+  }
+  .about__stack__logo__tooltip {
+    font-size: 24px;
   }
   .about__skills__heading {
     font-size: 40px;
@@ -984,13 +1031,16 @@ body {
     font-size: 29px;
     padding: 15px 0px;
   }
-  .lpage__quote__text {
+  .lpage__quote-container {
+    min-height: 216px;
+  }
+  .lpage__quote-container__quote__text {
     font-size: 29px;
   }
-  .lpage__quote__left-quote {
+  .lpage__quote-container__quote__left-quote {
     font-size: 49px;
   }
-  .lpage__quote__right-quote {
+  .lpage__quote-container__quote__right-quote {
     font-size: 49px;
   }
 
@@ -1011,6 +1061,9 @@ body {
   }
   .about__stack__logo {
     font-size: 49px;
+  }
+  .about__stack__logo__tooltip {
+    font-size: 29px;
   }
   .about__skills {
     height: 550px;

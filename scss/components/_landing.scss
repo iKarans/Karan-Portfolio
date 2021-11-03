@@ -45,8 +45,10 @@
         height: 250px;
         animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    &__quote {
+    &__quote-container {
         display: none;
+        &__quote {
+        display: grid;
         grid-template-columns: auto 1fr auto;
         grid-template-rows: auto auto;
         grid-gap: 20px;
@@ -65,5 +67,6 @@
             font-size: 18px;
             text-align: center;
         }
+        }   
     }
 }

@@ -1,4 +1,4 @@
-const quoteText = document.querySelector(".lpage__quote__text");
+const quoteText = document.querySelector(".lpage__quote-container__quote__text");
 
 export const quote = () => {
     fetch("http://localhost:8080/quotes?search=Portfolio").then(response => {
