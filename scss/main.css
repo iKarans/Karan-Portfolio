@@ -212,10 +212,10 @@ body {
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  width: 80px;
+  width: 120px;
   top: 100%;
   left: 50%;
-  margin-left: -40px;
+  margin-left: -60px;
   font-size: 14px;
 }
 .about__stack__logo__tooltip:after {
