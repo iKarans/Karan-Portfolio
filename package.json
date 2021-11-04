@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "\"Scss compiler\"",
   "main": "index.js",
+  "browserslist": "last 10 versions",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "sass --watch scss/main.scss main.css"
+    "watch:scss": "sass --watch scss/main.scss main.css",
+    "compile:scss": "sass scss/main.scss main.css",
+    "prefix:css": "postcss main.css --use autoprefixer -r",
+    "build:css": "npm-run-all compile:scss prefix:css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,10 @@
   },
   "homepage": "https://github.com/iKarans/KaranP#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.1",
     "sass": "^1.41.1"
   },
   "dependencies": {
