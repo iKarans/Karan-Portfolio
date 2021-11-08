@@ -1,5 +1,8 @@
 # Karan's Portfolio
 
+![Portfolio Project](https://github.com/iKarans/Karan-Portfolio/blob/main/iPortfolio.png)
+
+
 ## Introduction
 A website ,that showcases my personal projects and projects that I worked on during the _nology course, desgined using HTML, SCSS, CSS and Javascript using a mobile-first.
 
