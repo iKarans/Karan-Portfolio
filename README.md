@@ -11,4 +11,3 @@ https://ikarans.github.io/Karan-Portfolio/
 ## Improvements / To Dos
 * Flip card doesnt work properly on a safari broswer. (prefixer didn't help)
 * Add Client Project to Portfolio
-* Work on font-size for 1100px for flip card.
