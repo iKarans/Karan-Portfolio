@@ -12,4 +12,4 @@ The website is split into four sections: Home, About, Portfolio, Contact. On the
 https://ikarans.github.io/Karan-Portfolio/
 
 ## Improvements / To-Dos
-- [x] Flip card doesnt work properly on a safari broswer. (prefixer didn't help)
+- [ ] Flip card doesnt work properly on a safari broswer. (prefixer didn't help)
