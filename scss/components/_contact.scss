@@ -1,11 +1,11 @@
 .contact {
     background-color: #272a2f;
-    z-index: 9999;
     &__heading {
         margin-top: 75px;
         align-self: center;
         justify-self: center;
         font-family: "Inter", sans-serif;
+        z-index: 0;
     }
     &__heading:after {
         display: block;
@@ -21,6 +21,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 0;
         &__memoji {
             cursor: pointer;
             height: 25px;
@@ -69,5 +70,6 @@
         justify-self: center;
         align-self: center;
         margin-bottom: 75px;
+        z-index: 0;
     }
 }
