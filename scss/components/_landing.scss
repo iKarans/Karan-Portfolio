@@ -7,6 +7,7 @@
         font-family: "Inter", sans-serif;
         font-size: 29px;
         animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        z-index: 0;
         &__semicolon {
             color: white;
         }
@@ -22,6 +23,7 @@
         align-self: center;
         width: 225px;
         animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        z-index: 0;
         &__btn {
             padding: 13px 0px;
             background-color: #3F8EFC;
@@ -44,9 +46,11 @@
         align-self: center;
         height: 250px;
         animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        z-index: 0;
     }
     &__quote-container {
         display: none;
+        z-index: 0;
         &__quote {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -55,7 +59,7 @@
         animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         &__left-quote {
             font-size: 32px;
-            color: #3F8EFC
+            color: #3F8EFC;
         }
         &__right-quote {
             grid-column: 3 / 4;
