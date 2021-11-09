@@ -19,7 +19,7 @@ allFilter.addEventListener("click", (e) => {
   });
   filterBtns.forEach((btn) => {
     if (btn.innerText == currentFilter) {
-      btn.style.backgroundColor = "#2667FF";
+      btn.style.backgroundColor = "#3F8EFC";
     } else {
       btn.style.backgroundColor = "transparent";
     }
@@ -36,7 +36,7 @@ javascriptFilter.addEventListener("click", () => {
   });
   filterBtns.forEach((btn) => {
     if (btn.innerText == currentFilter) {
-      btn.style.backgroundColor = "#2667FF";
+      btn.style.backgroundColor = "#3F8EFC";
     } else {
       btn.style.backgroundColor = "transparent";
     }
@@ -53,7 +53,7 @@ reactFilter.addEventListener("click", () => {
   });
   filterBtns.forEach((btn) => {
     if (btn.innerText == currentFilter) {
-      btn.style.backgroundColor = "#2667FF";
+      btn.style.backgroundColor = "#3F8EFC";
     } else {
       btn.style.backgroundColor = "transparent";
     }
@@ -70,7 +70,7 @@ javaFilter.addEventListener("click", () => {
   });
   filterBtns.forEach((btn) => {
     if (btn.innerText == currentFilter) {
-      btn.style.backgroundColor = "#2667FF";
+      btn.style.backgroundColor = "#3F8EFC";
     } else {
       btn.style.backgroundColor = "transparent";
     }
@@ -87,7 +87,7 @@ cppFilter.addEventListener("click", () => {
   });
   filterBtns.forEach((btn) => {
     if (btn.innerText == currentFilter) {
-      btn.style.backgroundColor = "#2667FF";
+      btn.style.backgroundColor = "#3F8EFC";
     } else {
       btn.style.backgroundColor = "transparent";
     }

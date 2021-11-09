@@ -20,6 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 0;
         &__memoji {
             cursor: pointer;
             height: 25px;
