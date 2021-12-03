@@ -7,7 +7,7 @@ const javascriptFilter = document.querySelector(
 );
 const reactFilter = document.querySelector(".portfolio__filter__react");
 const javaFilter = document.querySelector(".portfolio__filter__java");
-const cppFilter = document.querySelector(".portfolio__filter__cpp");
+const otherFilter = document.querySelector(".portfolio__filter__other");
 const flipCards = document.querySelectorAll(".portfolio__gallery__flip");
 const filterBtns = document.querySelectorAll(".portfolio__filter__btn");
 let currentFilter;
@@ -77,11 +77,11 @@ javaFilter.addEventListener("click", () => {
   });
 });
 
-cppFilter.addEventListener("click", () => {
+otherFilter.addEventListener("click", () => {
   flipCards.forEach((card) => {
-    currentFilter = "C++";
+    currentFilter = otherFilter.innerText;
     card.classList.remove("portfolio__gallery__flip__hide-flip");
-    if (!card.dataset.lang.split(" ").includes("cpp")) {
+    if (!card.dataset.lang.split(" ").includes("other")) {
       card.classList.add("portfolio__gallery__flip__hide-flip");
     }
   });
