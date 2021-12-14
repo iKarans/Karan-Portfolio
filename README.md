@@ -15,5 +15,6 @@ https://ikarans.github.io/Karan-Portfolio/
 
 ## Improvements / To-Dos
 
-- [ ] Flip card doesnt work properly on a safari broswer. (prefixer didn't help)
+- [x] Flip card doesnt work properly on a safari broswer. (prefixer didn't help)
 - [ ] Add Animation to Stack and Skills box?
+- [ ] If I use respective alphabet it causes a wiggle in the mobile mode. Couldn't figure out how to stop it so using english characters for now.
